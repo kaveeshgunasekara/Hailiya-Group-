@@ -1,7 +1,13 @@
 /**
- * Hailiya Group — Replit dev server
- * Serves the static site from netlify_deploy/ and proxies Sanity API
- * requests server-side so CORS is never an issue in the preview pane.
+ * Hailiya Group — Replit dev server (REPLIT PREVIEW ONLY — NOT USED IN PRODUCTION)
+ *
+ * This file exists solely to work around a CORS limitation in the Replit
+ * preview pane (origin: 127.0.0.1:5000), which is not on Sanity's CORS
+ * allowlist. It is not deployed to cPanel, Vercel, Netlify, or anywhere else.
+ *
+ * The live site (cPanel / hailiya.com.au) serves netlify_deploy/ as plain
+ * static files. index.html fetches Sanity data directly from apicdn.sanity.io
+ * in the browser — no proxy, no server-side code required.
  */
 const http  = require('http');
 const https = require('https');

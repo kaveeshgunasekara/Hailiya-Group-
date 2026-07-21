@@ -1876,12 +1876,12 @@
   window.naFilter = naFilter;
 
   // ── Sanity CMS integration (products) ─────────────────
-  // Queries are routed to /sanity-proxy (same origin) so the browser never
-  // hits Sanity's CDN directly. The proxy is server.js in Replit and a
-  // [[redirects]] rule in netlify.toml for Netlify production.
+  var SANITY_PROJECT = '15fxxqgw';
+  var SANITY_DATASET = 'production';
+  var SANITY_API     = 'https://' + SANITY_PROJECT + '.apicdn.sanity.io/v2021-10-21/data/query/' + SANITY_DATASET;
 
   function sanityFetch(query) {
-    return fetch('/sanity-proxy?query=' + encodeURIComponent(query))
+    return fetch(SANITY_API + '?query=' + encodeURIComponent(query))
       .then(function(r) { return r.json(); })
       .then(function(d) { return d.result || []; });
   }
