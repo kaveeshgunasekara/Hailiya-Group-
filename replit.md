@@ -4,37 +4,38 @@
 
 Static HTML website for Hailiya Group Australia, the Australian distributor for Qingdao Huakai Ocean Science & Technology. Showcases rope products across four categories (Marine, Defence, Safety, Outdoor) and displays company news.
 
-The website fetches all product and news data at runtime from **Sanity CMS** (project ID: `15fxxqgw`, dataset: `production`). There is no hardcoded product/news data in the HTML — it is all CMS-driven.
+All product and news data is fetched at runtime from **Sanity CMS** (project ID: `15fxxqgw`, dataset: `production`). Confirmed live data: **43 products** and **119 news articles**.
 
 ## Stack
 
 - **Frontend:** Single-page static HTML (`netlify_deploy/index.html`) with inline CSS and JS
-- **CMS:** Sanity (`15fxxqgw` / `production`) — products and news fetched via public CDN API
+- **Dev server:** `server.js` — serves static files from `netlify_deploy/` and proxies Sanity API calls server-side (no CORS issues in preview)
+- **CMS:** Sanity (`15fxxqgw` / `production`) — products and news fetched via `/sanity-proxy` → `apicdn.sanity.io`
 - **Deployment target:** cPanel (upload contents of `netlify_deploy/`) or Netlify
 - **Sanity Studio:** https://hailiya-group.sanity.studio
 
 ## How to run on Replit
 
 ```bash
-npx --yes serve netlify_deploy -l 5000
+node server.js
 ```
 
-Workflow "Start application" is configured to do this automatically.
-
-> **Note:** Sanity API calls will fail with a CORS error in the Replit preview because Sanity's CORS settings only allow `hailiya.com.au`. Products and news will not load in the preview — this is expected. On the live site they load correctly.
+The "Start application" workflow runs this automatically on port 5000. Products and news load correctly in the Replit preview via the server-side Sanity proxy.
 
 ## Folder structure
 
 ```
-netlify_deploy/          ← The live website (deploy this folder)
+netlify_deploy/          ← The live website (deploy this folder to cPanel/Netlify)
   index.html             ← Main site (all sections, JS, CSS inline)
   news-article.html      ← Individual news article page
   privacy.html           ← Privacy policy
   images/                ← All images (products, news thumbnails)
   videos/                ← Video assets
   robots.txt / sitemap.xml
-import-products.js       ← One-time Sanity import script (products)
-import-news.js           ← One-time Sanity import script (news)
+server.js                ← Replit dev server: static files + Sanity proxy at /sanity-proxy
+scripts/post-merge.sh    ← Post-merge setup script (runs npm install)
+import-products.js       ← One-time Sanity import script (43 products) — already run
+import-news.js           ← One-time Sanity import script (119 news articles) — already run
 HANDOVER.md              ← Full handover notes from outgoing developer
 ```
 
@@ -43,10 +44,21 @@ HANDOVER.md              ← Full handover notes from outgoing developer
 | What | Location |
 |------|----------|
 | Sanity config (project ID, dataset) | Line ~1879 |
+| `sanityFetch()` — calls `/sanity-proxy` | Line ~1883 |
 | `loadProductsFromSanity()` | Line ~1906 |
 | `loadNewsFromSanity()` | Line ~1926 |
 | Product card HTML (Marine) | Line ~795 |
 | `PRODUCT_SPECS` modal data | Line ~1821 |
+
+## Sanity CMS
+
+- **Project ID:** `15fxxqgw`
+- **Dataset:** `production`
+- **Studio:** https://hailiya-group.sanity.studio
+- **Data confirmed:** 43 products, 119 news articles
+- **Images:** hosted on `cdn.sanity.io`
+
+> Note: The `netlify_deploy/index.html` CSP and `netlify.toml` do not include the Sanity CDN in `connect-src` — this doesn't matter for Replit (proxy handles it) but should be checked if deploying directly to Netlify.
 
 ## Contacts
 
