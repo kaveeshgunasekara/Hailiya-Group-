@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Large build artefacts and working files
+zipFile.zip
+*.zip
+
+# Backup files
+*.bak
+
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# Replit internal
+.replit
+replit.nix
+.config/
+.cache/
+
+# Attached assets (local to this workspace)
+attached_assets/
