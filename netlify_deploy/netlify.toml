@@ -57,6 +57,14 @@
     X-Content-Type-Options = "nosniff"
 
 # Redirect HTTP → HTTPS (belt-and-suspenders alongside Netlify's automatic SSL)
+# Sanity API proxy — forwards /sanity-proxy requests to Sanity's CDN
+# server-side so the browser never makes a cross-origin request.
+[[redirects]]
+  from   = "/sanity-proxy"
+  to     = "https://15fxxqgw.apicdn.sanity.io/v2021-10-21/data/query/production"
+  status = 200
+  force  = true
+
 [[redirects]]
   from = "http://hailiya.com.au/*"
   to   = "https://hailiya.com.au/:splat"
