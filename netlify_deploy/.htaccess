@@ -1,0 +1,89 @@
+# ═══════════════════════════════════════════════════════════════
+#  HAILIYA GROUP — APACHE / cPanel SECURITY CONFIGURATION
+#  Mirrors (and replaces) the protections previously in netlify.toml,
+#  which Apache/cPanel does NOT read. These are the headers that
+#  actually take effect on the live cPanel host.
+#  Standards: OWASP, NIST SP 800-53, RFC 6797 (HSTS),
+#             RFC 7034 (X-Frame-Options), CWE-693 / CWE-79
+# ═══════════════════════════════════════════════════════════════
+
+# ── 1. Force HTTPS ──────────────────────────────────────────────
+# Redirects all HTTP traffic to HTTPS (handles direct + proxied setups).
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP:X-Forwarded-Proto} =http
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# ── 2. Security response headers ────────────────────────────────
+<IfModule mod_headers.c>
+  # HSTS — force HTTPS for 1 year, include subdomains, preload-eligible (RFC 6797)
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+  # Clickjacking protection (RFC 7034) — matches CSP frame-ancestors 'none'
+  Header always set X-Frame-Options "DENY"
+
+  # MIME-type sniffing prevention (CWE-430)
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Referrer leakage control
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Permissions Policy — disable unused browser features
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), ambient-light-sensor=(), autoplay=(), fullscreen=(self)"
+
+  # Cross-origin isolation
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set Cross-Origin-Resource-Policy "same-site"
+
+  # DNS prefetch control — limits info leakage
+  Header always set X-DNS-Prefetch-Control "off"
+
+  # Content Security Policy (CWE-79 / OWASP A03/A05) — kept identical to the
+  # <meta> CSP in index.html. Sanity CMS: connect-src allows the query API and
+  # img-src allows the image CDN. When you wire up the Apps Script (or a PHP
+  # handler) for the contact form, add its origin to connect-src HERE and in
+  # the index.html meta tag.
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://cdn.sanity.io; media-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self'; object-src 'none'; connect-src 'self' https://15fxxqgw.apicdn.sanity.io https://15fxxqgw.api.sanity.io;"
+
+  # Strip framework/version fingerprint headers
+  Header unset X-Powered-By
+</IfModule>
+
+# ── 3. Cache-Control ────────────────────────────────────────────
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(png|jpe?g|gif|webp|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(mp4|webm)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+</IfModule>
+
+# ── 4. Disable directory listing ────────────────────────────────
+# Apache (unlike Netlify) lists folder contents by default. Turn it off.
+Options -Indexes
+
+# ── 5. Block access to dev / source / sensitive files ───────────
+# Apache 2.4 syntax (standard on cPanel).
+<FilesMatch "\.(py|toml|md|markdown|docx|doc|rar|zip|7z|tar|gz|sh|bak|old|log|ini|yml|yaml|sql)$">
+  Require all denied
+</FilesMatch>
+
+# Block dotfiles (.git, .env, etc.) but allow /.well-known/ (security.txt, ACME)
+RedirectMatch 403 ^/\.(?!well-known/).*$
+
+# Protect the .htaccess file itself
+<Files ".htaccess">
+  Require all denied
+</Files>
+
+# ── 6. MIME types (retained from previous .htaccess) ────────────
+<IfModule mod_mime.c>
+  AddType video/mp4  .mp4
+  AddType video/webm .webm
+</IfModule>

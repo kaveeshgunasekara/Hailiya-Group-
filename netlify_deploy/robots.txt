@@ -1,0 +1,13 @@
+# robots.txt — Hailiya Group Australia
+# Controls search engine crawler access
+# Standard: RFC 9309 (Robots Exclusion Protocol)
+
+User-agent: *
+Allow: /
+
+# Block access to build scripts and sensitive development files
+Disallow: /*.py$
+Disallow: /.claude/
+Disallow: /netlify_deploy/
+
+Sitemap: https://www.hailiya.com.au/sitemap.xml

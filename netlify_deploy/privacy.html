@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Privacy Policy — Hailiya Group Australia. How we collect, use, and protect your personal information under the Australian Privacy Act 1988.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.hailiya.com.au/privacy.html">
+<link rel="icon" type="image/png" href="images/haili-logo.png">
+
+<!-- Security Headers -->
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()">
+<meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+
+<title>Privacy Policy — Hailiya Group Australia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" crossorigin="anonymous">
+<style>
+  :root {
+    --red:#e0032b; --red-dark:#b80224;
+    --dark:#141414; --dark2:#1e1e1e; --dark3:#282828;
+    --gray:#646464; --gray-mid:#828282; --gray-lt:#cccccc;
+    --gray-bg:#f4f5f7; --white:#ffffff;
+    --navy:#0d2137; --gold:#c8a84b;
+    --shadow:0 4px 20px rgba(0,0,0,.10);
+    --shadow-lg:0 8px 40px rgba(0,0,0,.18);
+    --trans:.26s ease;
+    --container:1290px;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;font-size:16px}
+  body{font-family:'Lato',sans-serif;color:var(--gray);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{text-decoration:none;color:inherit}
+  button{font-family:inherit;cursor:pointer;border:none;background:none}
+  ul{list-style:none}
+
+  .container{max-width:var(--container);margin:0 auto;padding:0 24px}
+
+  /* TOP BAR */
+  .topbar{background:var(--dark3);color:rgba(255,255,255,.6);font-size:.78rem;padding:7px 0}
+  .topbar__inner{display:flex;align-items:center;justify-content:space-between}
+  .topbar a{color:rgba(255,255,255,.6);transition:color var(--trans)}
+  .topbar a:hover{color:var(--white)}
+  .topbar__left,.topbar__right{display:flex;align-items:center;gap:20px}
+  .topbar__sep{opacity:.3}
+  .topbar__flag{display:flex;align-items:center;gap:5px;font-weight:600}
+
+  /* HEADER */
+  .site-header{background:var(--white);position:sticky;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.07)}
+  .header__inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .logo{display:flex;align-items:center;gap:12px}
+  .logo__name{font-size:1.25rem;font-weight:900;color:var(--dark);letter-spacing:.02em;line-height:1.1}
+  .logo__sub{font-size:.62rem;color:var(--gray-mid);letter-spacing:.1em;text-transform:uppercase}
+  .main-nav{display:flex;align-items:center;gap:0}
+  .nav-item{position:relative}
+  .nav-link{display:flex;align-items:center;gap:5px;padding:0 18px;height:70px;font-size:.82rem;font-weight:700;color:var(--dark);text-transform:uppercase;letter-spacing:.07em;transition:color var(--trans);white-space:nowrap;border-bottom:3px solid transparent}
+  .nav-link:hover{color:var(--red);border-bottom-color:var(--red)}
+  .nav-arrow{font-size:.6rem;transition:transform var(--trans)}
+  .nav-item:hover .nav-arrow{transform:rotate(180deg)}
+  /* Dropdown */
+  .nav-drop{display:none;position:absolute;top:100%;left:0;min-width:220px;background:var(--white);box-shadow:var(--shadow-lg);border-top:3px solid var(--red);z-index:999}
+  .nav-item:hover .nav-drop{display:block}
+  .nav-drop a{display:flex;align-items:center;gap:10px;padding:13px 20px;font-size:.84rem;font-weight:600;color:var(--dark);transition:all var(--trans);border-bottom:1px solid var(--gray-bg)}
+  .nav-drop a:hover{color:var(--red);background:var(--gray-bg);padding-left:28px}
+  .nav-drop a:last-child{border:none}
+  /* Mega drop */
+  .nav-mega{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);width:860px;background:var(--white);box-shadow:var(--shadow-lg);border-top:3px solid var(--red);z-index:999;padding:36px 32px}
+  .nav-item:hover .nav-mega{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+  .mega-col__title{font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.12em;color:var(--red);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--gray-bg)}
+  .mega-col a{display:block;padding:5px 0;font-size:.83rem;color:var(--gray);transition:color var(--trans)}
+  .mega-col a:hover{color:var(--red)}
+  /* Header CTA */
+  .header-cta{display:inline-flex;align-items:center;gap:8px;padding:11px 24px;background:var(--red);color:var(--white);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;transition:background var(--trans)}
+  .header-cta:hover{background:var(--red-dark)}
+  /* Hamburger */
+  .hamburger{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer}
+  .hamburger span{display:block;width:24px;height:2px;background:var(--dark);transition:all var(--trans)}
+  /* Mobile menu */
+  .mobile-nav{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:var(--white);overflow-y:auto;z-index:998;padding:24px}
+  .mobile-nav.open{display:block}
+  .mobile-nav .nav-link{height:auto;padding:14px 0;border-bottom:1px solid var(--gray-bg);width:100%;justify-content:space-between}
+
+  /* PAGE HERO BAND */
+  .page-band{background:var(--dark2);padding:56px 0 48px;border-bottom:3px solid var(--red)}
+  .page-band__label{font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.18em;color:var(--red);margin-bottom:10px}
+  .page-band__title{font-size:clamp(1.8rem,3.5vw,3rem);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:10px}
+  .page-band__sub{font-size:.9rem;color:rgba(255,255,255,.55)}
+
+  /* PRIVACY CONTENT */
+  .privacy-wrap{max-width:820px;margin:0 auto;padding:64px 24px 80px}
+  .privacy-wrap h2{font-size:1.25rem;font-weight:900;color:var(--dark);margin:40px 0 12px;padding-bottom:8px;border-bottom:2px solid var(--red)}
+  .privacy-wrap h2:first-child{margin-top:0}
+  .privacy-wrap p{font-size:.95rem;color:var(--gray);line-height:1.78;margin-bottom:14px}
+  .privacy-wrap ul{margin:0 0 14px 20px;list-style:disc}
+  .privacy-wrap ul li{font-size:.95rem;color:var(--gray);line-height:1.78;margin-bottom:6px}
+  .privacy-wrap a{color:var(--red);transition:color var(--trans)}
+  .privacy-wrap a:hover{color:var(--red-dark);text-decoration:underline}
+  .privacy-meta{font-size:.8rem;color:var(--gray-mid);margin-bottom:40px;padding:14px 18px;background:var(--gray-bg);border-left:3px solid var(--red)}
+  .privacy-contact-box{background:var(--gray-bg);border:1px solid var(--gray-lt);padding:24px 28px;margin-top:16px}
+  .privacy-contact-box p{margin-bottom:6px}
+  .privacy-contact-box p:last-child{margin-bottom:0}
+
+  /* FOOTER */
+  .footer{background:var(--dark3);color:rgba(255,255,255,.55);padding:56px 0 0}
+  .footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1.4fr;gap:44px;margin-bottom:44px}
+  .footer-brand__name{font-size:1.15rem;font-weight:900;color:var(--white);margin-bottom:3px}
+  .footer-brand__sub{font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.35);margin-bottom:16px}
+  .footer-brand p{font-size:.82rem;line-height:1.72;margin-bottom:20px}
+  .footer-social{display:flex;gap:8px}
+  .footer-social a{width:34px;height:34px;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.45);font-size:.82rem;transition:all var(--trans)}
+  .footer-social a:hover{border-color:var(--red);color:var(--white);background:var(--red)}
+  .footer-col__t{font-size:.68rem;font-weight:900;text-transform:uppercase;letter-spacing:.14em;color:var(--white);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .footer-col a{display:block;font-size:.82rem;color:rgba(255,255,255,.5);padding:4px 0;transition:color var(--trans)}
+  .footer-col a:hover{color:var(--red)}
+  .footer-contact-row{display:flex;gap:10px;margin-bottom:11px;font-size:.82rem}
+  .footer-contact-row .fc-icon{color:var(--red);flex-shrink:0;margin-top:2px}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding:18px 0;display:flex;align-items:center;justify-content:space-between;font-size:.75rem}
+  .footer-bottom a{color:rgba(255,255,255,.45);transition:color var(--trans)}
+  .footer-bottom a:hover{color:var(--red)}
+
+  /* SKIP LINK */
+  .skip-link:focus{left:0}
+
+  /* RESPONSIVE */
+  @media(max-width:1024px){
+    .nav-mega{width:680px;grid-template-columns:repeat(2,1fr)}
+    .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
+  }
+  @media(max-width:768px){
+    .main-nav,.topbar__right{display:none}
+    .hamburger{display:flex}
+    .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
+  }
+  @media(max-width:480px){
+    .footer-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:0;z-index:9999;padding:8px 16px;background:#e0032b;color:#fff;font-weight:700;">Skip to main content</a>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar__inner">
+      <div class="topbar__left">
+        <span class="topbar__flag">🇦🇺 Australia</span>
+        <span class="topbar__sep">|</span>
+        <a href="mailto:info@hailiya.com.au">info@hailiya.com.au</a>
+        <span class="topbar__sep">|</span>
+        <a href="tel:+61280062666">+61 2 8006 2666</a>
+      </div>
+      <div class="topbar__right">
+        <a href="index.html#news">News &amp; Events</a>
+        <span class="topbar__sep">|</span>
+        <a href="index.html#contact">Contact Us</a>
+        <span class="topbar__sep">|</span>
+        <a href="index.html#about">About</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header" role="banner">
+  <div class="container">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <img src="images/haili-logo.png" alt="Hailiya Group Logo" width="120" height="46" style="height:46px;width:auto;object-fit:contain;display:block;">
+        <div class="logo__text">
+          <div class="logo__name">Hailiya Group</div>
+          <div class="logo__sub">Australia — Rope Technology</div>
+        </div>
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-item">
+          <a class="nav-link" href="index.html#products">Products <span class="nav-arrow">▾</span></a>
+          <div class="nav-mega">
+            <div class="mega-col">
+              <div class="mega-col__title">🌊 Marine</div>
+              <a href="index.html#products">UHMWPE 12-Strand Rope</a>
+              <a href="index.html#products">Polyester 12-Strand Rope</a>
+              <a href="index.html#products">Aramid 12-Strand Rope</a>
+              <a href="index.html#products">Vectran 12-Strand Rope</a>
+              <a href="index.html#products">Non-Metallic Cable Grip</a>
+              <a href="index.html#products">Fiber Chain Belt</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col__title">🛡️ Defence</div>
+              <a href="index.html#products">High-Strength UHMWPE Rope</a>
+              <a href="index.html#products">Fast Rope</a>
+              <a href="index.html#products">Combat Training System</a>
+              <a href="index.html#products">Tow Rope</a>
+              <a href="index.html#products">Soft Shackles</a>
+              <a href="index.html#products">Fireproof Rope</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col__title">🔒 Safety</div>
+              <a href="index.html#products">Static Rope EN1891</a>
+              <a href="index.html#products">Dynamic Rope EN892</a>
+              <a href="index.html#products">Accessory Cord EN564</a>
+              <a href="index.html#products">Rescue Training Systems</a>
+              <a href="index.html#products">Umbilical Cable</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col__title">🏔️ Outdoor</div>
+              <a href="index.html#products">Dynamic Rope</a>
+              <a href="index.html#products">Static Rope</a>
+              <a href="index.html#products">Kinetic Recovery Rope</a>
+              <a href="index.html#products">Soft Shackle</a>
+              <a href="index.html#products">Winch Rope</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="index.html#about">About</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="index.html#projects">Projects</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="index.html#news">News</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+      <div style="display:flex;align-items:center;gap:12px">
+        <a class="header-cta" href="index.html#contact">Get a Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="nav-item">
+    <a class="nav-link" href="index.html#products" onclick="closeMenu()">Products</a>
+  </div>
+  <div class="nav-item">
+    <a class="nav-link" href="index.html#about" onclick="closeMenu()">About</a>
+  </div>
+  <div class="nav-item">
+    <a class="nav-link" href="index.html#projects" onclick="closeMenu()">Projects</a>
+  </div>
+  <div class="nav-item">
+    <a class="nav-link" href="index.html#news" onclick="closeMenu()">News</a>
+  </div>
+  <div class="nav-item">
+    <a class="nav-link" href="index.html#contact" onclick="closeMenu()">Contact</a>
+  </div>
+</div>
+
+<!-- PAGE BAND -->
+<div class="page-band">
+  <div class="container">
+    <div class="page-band__label">Legal</div>
+    <h1 class="page-band__title">Privacy Policy</h1>
+    <p class="page-band__sub">How Hailiya Group Australia collects, uses, and protects your personal information</p>
+  </div>
+</div>
+
+<!-- PRIVACY CONTENT -->
+<main id="main-content" role="main">
+  <div class="privacy-wrap">
+
+    <div class="privacy-meta">
+      <strong>Last updated: May 2026.</strong> This Privacy Policy applies to Hailiya Group Australia and is governed by the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs).
+    </div>
+
+    <h2>1. About Us</h2>
+    <p>
+      Hailiya Group Australia is the exclusive Australian distributor for Qingdao Huakai Ocean Science &amp; Technology Co., Ltd. — a manufacturer of world-class high-performance rope systems with over 100 years of history. We supply marine, defence, safety, and outdoor rope technology to professional buyers across Australia and the Asia-Pacific region.
+    </p>
+    <p>
+      In this Privacy Policy, "we", "us", and "our" refer to Hailiya Group Australia. Our contact details are set out in Section 7.
+    </p>
+
+    <h2>2. Personal Information We Collect</h2>
+    <p>
+      We collect personal information only when you voluntarily provide it to us — primarily through the contact and enquiry form on our website. The information we may collect includes:
+    </p>
+    <ul>
+      <li><strong>Full name</strong> — to address you properly in correspondence</li>
+      <li><strong>Company or organisation name</strong> — to understand your business context</li>
+      <li><strong>Email address</strong> — to send you our response and any product information you request</li>
+      <li><strong>Phone number</strong> — to follow up your enquiry if required</li>
+      <li><strong>Message content</strong> — the details of your rope or product enquiry</li>
+    </ul>
+    <p>
+      We do not collect sensitive information (as defined in the Privacy Act 1988), financial information, or government-issued identifiers through our website.
+    </p>
+    <p>
+      When you visit our website, our web server may also record standard access logs (IP address, browser type, pages visited, and referral URL) for security and performance monitoring purposes. This information is not linked to your personal identity unless required for security incident investigation.
+    </p>
+
+    <h2>3. How We Use Your Personal Information</h2>
+    <p>We use the personal information you provide for the following purposes:</p>
+    <ul>
+      <li>To respond to your product enquiry or request for a quote</li>
+      <li>To provide you with relevant product information, specifications, and pricing</li>
+      <li>To prepare and deliver a quotation or product proposal</li>
+      <li>To arrange samples, technical consultations, or order fulfilment where applicable</li>
+      <li>To maintain records of our customer communications for quality assurance</li>
+    </ul>
+    <p>
+      We will not use your personal information for direct marketing without your explicit consent. We will not send unsolicited commercial electronic messages under the <em>Spam Act 2003</em> (Cth).
+    </p>
+
+    <h2>4. Disclosure of Personal Information</h2>
+    <p>
+      We do not sell, rent, or trade your personal information to any third party.
+    </p>
+    <p>
+      In certain circumstances, we may share your personal information with the following parties, strictly for the purposes described in Section 3:
+    </p>
+    <ul>
+      <li>
+        <strong>Qingdao Huakai Ocean Science &amp; Technology Co., Ltd. (China)</strong> — our parent manufacturer. Where your enquiry requires technical specifications, custom manufacturing, or product availability confirmation that must be sourced from the factory, we may share your name, company name, email, and enquiry details with Huakai solely to enable them to assist in fulfilling your request. Huakai is located in the People's Republic of China, a country that does not have an equivalent level of privacy protection to Australia. By submitting an enquiry to us, you acknowledge that your information may be disclosed to this overseas recipient for this purpose.
+      </li>
+      <li>
+        <strong>Service providers</strong> — we may use third-party service providers (such as email hosting or website infrastructure) to operate our business. These providers are engaged under confidentiality obligations and are not permitted to use your information for their own purposes.
+      </li>
+    </ul>
+    <p>
+      We will not otherwise disclose your personal information without your consent, unless required or authorised by Australian law (including for law enforcement purposes).
+    </p>
+
+    <h2>5. Storage and Security</h2>
+    <p>
+      We take reasonable steps to protect the personal information we hold from misuse, interference, loss, unauthorised access, modification, and disclosure. These steps include:
+    </p>
+    <ul>
+      <li>Secure transmission of data via HTTPS (TLS encryption) on our website</li>
+      <li>Restricted access to personal information within our organisation, on a need-to-know basis</li>
+      <li>Use of reputable, industry-standard email and storage systems</li>
+      <li>Periodic review of our information security practices</li>
+    </ul>
+    <p>
+      While we take these precautions, no method of electronic transmission or storage is completely secure. We cannot guarantee the absolute security of information transmitted to us over the internet.
+    </p>
+    <p>
+      We will retain your personal information for as long as necessary to fulfil the purpose for which it was collected, or as required by law. When your personal information is no longer needed, we will take reasonable steps to destroy or de-identify it.
+    </p>
+
+    <h2>6. Your Rights Under the Australian Privacy Act 1988</h2>
+    <p>
+      Under the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles, you have the following rights in relation to your personal information:
+    </p>
+    <ul>
+      <li>
+        <strong>Right of access</strong> — You may request access to the personal information we hold about you. We will respond to your request within a reasonable time and, in most cases, within 30 days.
+      </li>
+      <li>
+        <strong>Right to correction</strong> — If you believe personal information we hold about you is inaccurate, out of date, incomplete, irrelevant, or misleading, you may ask us to correct it. We will take reasonable steps to correct the information or, if we disagree, provide you with a written explanation.
+      </li>
+      <li>
+        <strong>Right to make a complaint</strong> — You have the right to make a complaint if you believe we have mishandled your personal information or breached the Australian Privacy Principles. Please contact us first using the details in Section 7. If you are not satisfied with our response, you may lodge a complaint with the Office of the Australian Information Commissioner (OAIC) at <a href="https://www.oaic.gov.au" target="_blank" rel="noopener noreferrer">www.oaic.gov.au</a> or by calling 1300 363 992.
+      </li>
+    </ul>
+    <p>
+      To exercise any of these rights, please contact us using the details in Section 7. We may ask you to verify your identity before processing your request.
+    </p>
+    <p>
+      We will not charge a fee for making an access or correction request, but may charge a reasonable fee to cover the cost of providing access if the request is complex or time-consuming.
+    </p>
+
+    <h2>7. Contact Us About Privacy</h2>
+    <p>
+      If you have any questions about this Privacy Policy, wish to access or correct your personal information, or would like to make a privacy complaint, please contact us:
+    </p>
+    <div class="privacy-contact-box">
+      <p><strong>Hailiya Group Australia</strong></p>
+      <p>Email: <a href="mailto:info@hailiya.com.au">info@hailiya.com.au</a></p>
+      <p>Phone: <a href="tel:+61280062666">+61 2 8006 2666</a></p>
+      <p>Location: Sydney, NSW, Australia</p>
+      <p>Hours: Monday–Friday, 8:30am–5:30pm AEST</p>
+    </div>
+    <p style="margin-top:20px;">
+      We will acknowledge your privacy enquiry or complaint within 5 business days and aim to resolve it within 30 days.
+    </p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time to reflect changes in our practices, legal obligations, or business operations. The current version will always be available on this page, with the "Last updated" date shown at the top. We encourage you to review this policy periodically.
+    </p>
+    <p>
+      Your continued use of our website or submission of enquiries after any changes to this policy constitutes your acceptance of the updated policy.
+    </p>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand__name">Hailiya Group</div>
+        <div class="footer-brand__sub">Australia — High-Performance Rope Technology</div>
+        <p>Australian distributor for Qingdao Huakai Ocean Science &amp; Technology — a century-old innovator in synthetic rope manufacturing, trusted by navies, rescue services and industry leaders worldwide.</p>
+        <div class="footer-social">
+          <a href="#" title="LinkedIn">in</a>
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col__t">Products</div>
+        <a href="index.html#products">Marine Ropes</a>
+        <a href="index.html#products">Defence Ropes</a>
+        <a href="index.html#products">Safety Ropes</a>
+        <a href="index.html#products">Outdoor Ropes</a>
+        <a href="index.html#awards">Certifications</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col__t">Company</div>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#projects">Notable Projects</a>
+        <a href="index.html#news">News &amp; Events</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#awards">Awards</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col__t">Contact Australia</div>
+        <div class="footer-contact-row"><span class="fc-icon">📧</span><span>info@hailiya.com.au</span></div>
+        <div class="footer-contact-row"><span class="fc-icon">📞</span><span>+61 2 8006 2666</span></div>
+        <div class="footer-contact-row"><span class="fc-icon">📍</span><span>Sydney, NSW, Australia</span></div>
+        <div class="footer-contact-row"><span class="fc-icon">🕐</span><span>Mon–Fri 8:30am–5:30pm AEST</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;width:100%">
+      <span>© 2026 Hailiya Group Australia. All rights reserved.
+        <a href="privacy.html" style="color:rgba(255,255,255,.45);margin-left:16px;transition:color .26s ease;" onmouseover="this.style.color='#e0032b'" onmouseout="this.style.color='rgba(255,255,255,.45)'">Privacy Policy</a>
+      </span>
+      <span>Australian distributor of Qingdao Huakai Ocean Science &amp; Technology</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var hamburger = document.getElementById('hamburger');
+  var mobileNav = document.getElementById('mobileNav');
+  function closeMenu() { mobileNav.classList.remove('open'); }
+  hamburger.addEventListener('click', function() { mobileNav.classList.toggle('open'); });
+</script>
+</body>
+</html>

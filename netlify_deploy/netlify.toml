@@ -1,0 +1,70 @@
+# ═══════════════════════════════════════════════════════
+#  HAILIYA GROUP — NETLIFY SECURITY CONFIGURATION
+#  Standards: OWASP, NIST SP 800-53, RFC 6797 (HSTS),
+#             RFC 7034 (X-Frame-Options), CWE-693
+# ═══════════════════════════════════════════════════════
+
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+
+    # 1. HTTP Strict Transport Security (HSTS) — RFC 6797
+    #    Forces HTTPS for 1 year; includes subdomains; eligible for preload list
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+    # 2. Content Security Policy — OWASP A05 / CWE-693 / CWE-79
+    #    Restricts resource origins to prevent XSS and data injection attacks
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self'; object-src 'none';"
+
+    # 3. X-Frame-Options — RFC 7034 / OWASP A05 — clickjacking prevention
+    X-Frame-Options = "DENY"
+
+    # 4. X-Content-Type-Options — prevents MIME sniffing attacks (CWE-430)
+    X-Content-Type-Options = "nosniff"
+
+    # 5. Referrer-Policy — limits referrer data sent to third parties
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # 6. Permissions-Policy — disables browser features not used by the site
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), ambient-light-sensor=(), autoplay=(), fullscreen=(self)"
+
+    # 7. Cross-Origin Opener Policy — prevents cross-origin window attacks
+    Cross-Origin-Opener-Policy = "same-origin"
+
+    # 8. Cross-Origin Resource Policy — prevents cross-origin resource reads
+    Cross-Origin-Resource-Policy = "same-site"
+
+    # 9. X-DNS-Prefetch-Control — limits DNS prefetching to reduce info leakage
+    X-DNS-Prefetch-Control = "off"
+
+    # 10. Cache-Control for HTML pages — prevents stale sensitive page caching
+    Cache-Control = "no-cache, must-revalidate"
+
+# Static assets — long-lived cache with immutable flag (safe for versioned files)
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/*.mp4"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+    X-Content-Type-Options = "nosniff"
+
+# Redirect HTTP → HTTPS (belt-and-suspenders alongside Netlify's automatic SSL)
+[[redirects]]
+  from = "http://hailiya.com.au/*"
+  to   = "https://hailiya.com.au/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "http://www.hailiya.com.au/*"
+  to   = "https://www.hailiya.com.au/:splat"
+  status = 301
+  force  = true

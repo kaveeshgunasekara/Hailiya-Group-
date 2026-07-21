@@ -1,0 +1,9 @@
+# security.txt — Hailiya Group Australia
+# Standard: RFC 9116 (A File Format to Aid in Security Vulnerability Disclosure)
+# Reference: https://securitytxt.org/
+
+Contact: mailto:info@hailiya.com.au
+Expires: 2027-05-16T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://www.hailiya.com.au/.well-known/security.txt
+Policy: https://www.hailiya.com.au/security-policy

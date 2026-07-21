@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Hailiya Group — Australian distributor of world-class high-performance ropes for marine, defence, safety and outdoor applications. 100+ years of rope technology.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.hailiya.com.au/">
+<meta property="og:title" content="Hailiya Group Australia — High-Performance Rope Technology">
+<meta property="og:description" content="Hailiya Group — Australian distributor of world-class high-performance ropes for marine, defence, safety and outdoor applications. 100+ years of rope technology.">
+<meta property="og:image" content="https://www.hailiya.com.au/images/haili-logo.png">
+<meta property="og:site_name" content="Hailiya Group Australia">
+<meta property="og:locale" content="en_AU">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hailiya Group Australia — High-Performance Rope Technology">
+<meta name="twitter:description" content="Hailiya Group — Australian distributor of world-class high-performance ropes for marine, defence, safety and outdoor applications. 100+ years of rope technology.">
+<meta name="twitter:image" content="https://www.hailiya.com.au/images/haili-logo.png">
+
+<!-- Canonical & Crawling -->
+<link rel="canonical" href="https://www.hailiya.com.au/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/haili-logo.png">
+
+<!-- ═══════════════════════════════════════════════
+     SECURITY HEADERS (OWASP / NIST / CWE)
+     ═══════════════════════════════════════════════ -->
+<!-- 1. Content Security Policy — blocks injected scripts/styles from unknown origins -->
+<!-- NOTE: To further harden script-src in future, migrate inline scripts to an external .js file and replace 'unsafe-inline' with a server-generated per-request nonce. This requires server-side rendering. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://cdn.sanity.io; media-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self'; object-src 'none'; connect-src 'self' https://15fxxqgw.apicdn.sanity.io https://15fxxqgw.api.sanity.io;">
+<!-- 2. Clickjacking protection (X-Frame-Options equivalent) -->
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+<!-- 3. MIME-type sniffing prevention -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<!-- 4. Referrer policy — limits referrer info sent to third parties -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<!-- 5. Permissions Policy — disables unused browser features -->
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()">
+<!-- 6. Cross-Origin Opener Policy — prevents cross-origin window attacks -->
+<meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+
+<title>Hailiya Group Australia — High-Performance Rope Technology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- SRI NOTE: Google Fonts CSS is dynamically generated per user-agent and cannot have a static integrity hash. SRI for this resource must be handled server-side (e.g. by self-hosting the font files and hashing those instead). -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" crossorigin="anonymous">
+<link rel="preload" as="video" href="videos/company-promo.mp4" type="video/mp4">
+<style>
+
+  /* ═══════════════════════════════════════════════
+     HAILIYA GROUP — MARLOW-INSPIRED DESIGN SYSTEM
+     ═══════════════════════════════════════════════ */
+  :root {
+    --red:#e0032b; --red-dark:#b80224;
+    --dark:#141414; --dark2:#1e1e1e; --dark3:#282828;
+    --gray:#646464; --gray-mid:#828282; --gray-lt:#cccccc;
+    --gray-bg:#f4f5f7; --white:#ffffff;
+    --navy:#0d2137; --gold:#c8a84b;
+    --shadow:0 4px 20px rgba(0,0,0,.10);
+    --shadow-lg:0 8px 40px rgba(0,0,0,.18);
+    --trans:.26s ease;
+    --container:1290px;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;font-size:16px}
+  body{font-family:'Lato',sans-serif;color:var(--gray);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{text-decoration:none;color:inherit}
+  button{font-family:inherit;cursor:pointer;border:none;background:none}
+  ul{list-style:none}
+
+  .container{max-width:var(--container);margin:0 auto;padding:0 24px}
+
+  /* TOP BAR */
+  .topbar{background:var(--dark3);color:rgba(255,255,255,.6);font-size:.78rem;padding:7px 0}
+  .topbar__inner{display:flex;align-items:center;justify-content:space-between}
+  .topbar a{color:rgba(255,255,255,.6);transition:color var(--trans)}
+  .topbar a:hover{color:var(--white)}
+  .topbar__left,.topbar__right{display:flex;align-items:center;gap:20px}
+  .topbar__sep{opacity:.3}
+  .topbar__flag{display:flex;align-items:center;gap:5px;font-weight:600}
+
+  /* HEADER */
+  .site-header{background:var(--white);position:sticky;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.07)}
+  .header__inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .logo{display:flex;align-items:center;gap:12px}
+  .logo__mark{display:none}
+  .logo__text{}
+  .logo__name{font-size:1.25rem;font-weight:900;color:var(--dark);letter-spacing:.02em;line-height:1.1}
+  .logo__sub{font-size:.62rem;color:var(--gray-mid);letter-spacing:.1em;text-transform:uppercase}
+  .main-nav{display:flex;align-items:center;gap:0}
+  .nav-item{position:relative}
+  .nav-link{display:flex;align-items:center;gap:5px;padding:0 18px;height:70px;font-size:.82rem;font-weight:700;color:var(--dark);text-transform:uppercase;letter-spacing:.07em;transition:color var(--trans);white-space:nowrap;border-bottom:3px solid transparent}
+  .nav-link:hover,.nav-link.active{color:var(--red);border-bottom-color:var(--red)}
+  .nav-arrow{font-size:.6rem;transition:transform var(--trans)}
+  .nav-item:hover .nav-arrow{transform:rotate(180deg)}
+  /* Dropdown */
+  .nav-drop{display:none;position:absolute;top:100%;left:0;min-width:220px;background:var(--white);box-shadow:var(--shadow-lg);border-top:3px solid var(--red);z-index:999}
+  .nav-item:hover .nav-drop{display:block}
+  .nav-drop a{display:flex;align-items:center;gap:10px;padding:13px 20px;font-size:.84rem;font-weight:600;color:var(--dark);transition:all var(--trans);border-bottom:1px solid var(--gray-bg)}
+  .nav-drop a:hover{color:var(--red);background:var(--gray-bg);padding-left:28px}
+  .nav-drop a:last-child{border:none}
+  /* Mega drop */
+  .nav-mega{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);width:860px;background:var(--white);box-shadow:var(--shadow-lg);border-top:3px solid var(--red);z-index:999;padding:36px 32px}
+  .nav-item:hover .nav-mega{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+  .mega-col__title{font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.12em;color:var(--red);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--gray-bg)}
+  .mega-col a{display:block;padding:5px 0;font-size:.83rem;color:var(--gray);transition:color var(--trans)}
+  .mega-col a:hover{color:var(--red)}
+  /* Header CTA */
+  .header-cta{display:inline-flex;align-items:center;gap:8px;padding:11px 24px;background:var(--red);color:var(--white);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;transition:background var(--trans)}
+  .header-cta:hover{background:var(--red-dark)}
+  /* Hamburger */
+  .hamburger{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer}
+  .hamburger span{display:block;width:24px;height:2px;background:var(--dark);transition:all var(--trans)}
+  /* Mobile menu */
+  .mobile-nav{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:var(--white);overflow-y:auto;z-index:998;padding:24px}
+  .mobile-nav.open{display:block}
+  .mobile-nav .nav-link{height:auto;padding:14px 0;border-bottom:1px solid var(--gray-bg);width:100%;justify-content:space-between}
+  .mobile-nav .nav-drop{position:static;box-shadow:none;border:none;background:var(--gray-bg);display:none;padding:8px 0 8px 16px}
+  .mobile-nav .nav-item.open .nav-drop{display:block}
+
+  /* HERO */
+  .hero{position:relative;height:100vh;min-height:580px;max-height:820px;overflow:hidden;background:var(--dark)}
+  .hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.1s ease;background-size:cover;background-position:center}
+  .hero-slide.active{opacity:1}
+  .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(14,14,14,.78) 0%,rgba(14,14,14,.38) 100%)}
+  .hero-body{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center}
+  .hero-body .container{width:100%}
+  .hero-label{font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.2em;color:var(--red);margin-bottom:16px}
+  .hero-title{font-size:clamp(2.4rem,5vw,4.8rem);font-weight:900;color:var(--white);line-height:1.08;max-width:680px;margin-bottom:18px}
+  .hero-title em{color:var(--red);font-style:normal}
+  .hero-sub{font-size:clamp(.95rem,1.8vw,1.15rem);color:rgba(255,255,255,.82);max-width:540px;margin-bottom:36px;line-height:1.72}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .btn-red{display:inline-flex;align-items:center;gap:10px;padding:15px 34px;background:var(--red);color:var(--white);font-weight:700;font-size:.88rem;text-transform:uppercase;letter-spacing:.08em;transition:all var(--trans)}
+  .btn-red:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(224,3,43,.4)}
+  .btn-ghost{display:inline-flex;align-items:center;gap:10px;padding:14px 34px;border:2px solid rgba(255,255,255,.65);color:var(--white);font-weight:700;font-size:.88rem;text-transform:uppercase;letter-spacing:.08em;transition:all var(--trans)}
+  .btn-ghost:hover{background:rgba(255,255,255,.12);border-color:var(--white)}
+  /* Hero dots */
+  .hero-dots{position:absolute;bottom:88px;left:50%;transform:translateX(-50%);z-index:3;display:flex;gap:8px}
+  .hero-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer;transition:all var(--trans)}
+  .hero-dot.active{background:var(--red);transform:scale(1.4)}
+  /* Hero sector strip */
+  .hero-strip{position:absolute;bottom:0;left:0;right:0;z-index:3;background:rgba(20,20,20,.9);backdrop-filter:blur(6px)}
+  .hero-strip__inner{display:grid;grid-template-columns:repeat(5,1fr);max-width:var(--container);margin:0 auto;padding:0 24px}
+  .hero-sector{display:flex;align-items:center;gap:12px;padding:18px 16px;color:rgba(255,255,255,.65);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;cursor:pointer;transition:all var(--trans);border-right:1px solid rgba(255,255,255,.07)}
+  .hero-sector:last-child{border:none}
+  .hero-sector:hover,.hero-sector.active-tab{background:var(--red);color:var(--white)}
+  .hero-sector__icon{font-size:1.3rem;flex-shrink:0}
+
+
+  /* HERO VIDEO */
+  .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;pointer-events:none}
+  .hero-overlay{z-index:1}
+  .hero-body{z-index:2}
+  .hero-strip{z-index:3}
+  /* SECTIONS */
+  .section{padding:84px 0}
+  .section--alt{background:var(--gray-bg)}
+  .section--dark{background:var(--dark2);color:var(--white)}
+  .section--navy{background:var(--navy);color:var(--white)}
+  .sec-label{display:inline-block;font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.18em;color:var(--red);margin-bottom:10px}
+  .section--dark .sec-label,.section--navy .sec-label{color:rgba(255,255,255,.55)}
+  .sec-rule{width:44px;height:4px;background:var(--red);margin:12px 0 18px}
+  .sec-title{font-size:clamp(1.7rem,3vw,2.8rem);font-weight:900;color:var(--dark);line-height:1.12;margin-bottom:14px}
+  .section--dark .sec-title,.section--navy .sec-title{color:var(--white)}
+  .sec-sub{font-size:.97rem;color:var(--gray);line-height:1.72;max-width:660px}
+  .section--dark .sec-sub,.section--navy .sec-sub{color:rgba(255,255,255,.65)}
+  .sec-header{margin-bottom:48px}
+  .sec-header--c{text-align:center}
+  .sec-header--c .sec-sub,.sec-header--c .sec-rule{margin-left:auto;margin-right:auto}
+
+  /* STATS */
+  .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--gray-lt)}
+  .stat-cell{background:var(--white);padding:40px 24px;text-align:center}
+  .stat-cell__num{font-size:2.8rem;font-weight:900;color:var(--dark);line-height:1;margin-bottom:6px}
+  .stat-cell__num sup{font-size:1.4rem;vertical-align:super}
+  .stat-cell__num em{color:var(--red);font-style:normal}
+  .stat-cell__lbl{font-size:.78rem;font-weight:700;color:var(--gray-mid);text-transform:uppercase;letter-spacing:.08em}
+
+  /* ABOUT */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+  .about-imgs{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:210px 210px;gap:10px}
+  .about-imgs img{width:100%;height:100%;object-fit:cover}
+  .about-imgs img:first-child{grid-row:span 2}
+  .about-text .sec-label{display:block}
+  .about-text p{margin-bottom:18px;color:var(--gray);line-height:1.78}
+  .about-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0;padding:24px 0;border-top:1px solid var(--gray-lt);border-bottom:1px solid var(--gray-lt)}
+  .about-kpi__n{font-size:1.9rem;font-weight:900;color:var(--dark)}
+  .about-kpi__n em{color:var(--red);font-style:normal}
+  .about-kpi__l{font-size:.72rem;font-weight:700;color:var(--gray-mid);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+
+  /* DOMAINS */
+  .domains-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+  .dom-card{position:relative;overflow:hidden;aspect-ratio:4/5;background:var(--dark);cursor:pointer}
+  .dom-card img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;opacity:.65}
+  .dom-card:hover img{transform:scale(1.08);opacity:.45}
+  .dom-card__ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.82) 0%,transparent 55%)}
+  .dom-card:hover .dom-card__ov{background:linear-gradient(to top,rgba(224,3,43,.88) 0%,rgba(224,3,43,.18) 100%)}
+  .dom-card__body{position:absolute;bottom:0;left:0;right:0;padding:24px 20px}
+  .dom-card__icon{font-size:1.8rem;margin-bottom:6px}
+  .dom-card__name{font-size:1.05rem;font-weight:900;color:var(--white);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px}
+  .dom-card__count{font-size:.72rem;color:rgba(255,255,255,.6);font-weight:600;letter-spacing:.06em}
+  .dom-card__arrow{position:absolute;top:20px;right:20px;width:34px;height:34px;background:var(--red);display:flex;align-items:center;justify-content:center;color:var(--white);font-size:.9rem;opacity:0;transform:translateY(-8px);transition:all var(--trans)}
+  .dom-card:hover .dom-card__arrow{opacity:1;transform:translateY(0)}
+
+  /* PRODUCTS */
+  .prod-tabs{display:flex;border-bottom:2px solid var(--gray-lt);margin-bottom:44px;overflow-x:auto}
+  .prod-tab{padding:15px 28px;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--gray);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap;transition:all var(--trans)}
+  .prod-tab:hover{color:var(--dark)}
+  .prod-tab.active{color:var(--red);border-bottom-color:var(--red)}
+  .prod-panel{display:none}
+  .prod-panel.active{display:block}
+  .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+
+  /* PRODUCT CARDS — Full-image dramatic reveal */
+  .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+  .product-card__icon{display:none}
+  .product-card[data-img]{
+    position:relative;overflow:hidden;cursor:pointer;
+    aspect-ratio:4/3;display:block;background:var(--dark);
+    border:none;transform:none;box-shadow:none;flex-direction:unset;
+  }
+  /* red bar accent — slides in on hover */
+  .product-card[data-img]::before{
+    content:'';position:absolute;top:0;left:0;width:4px;height:0;
+    background:var(--red);z-index:4;transition:height .4s ease;
+  }
+  .product-card[data-img]:hover::before{height:100%}
+  /* full-bleed image */
+  .pc-img-wrap{position:absolute!important;inset:0!important;height:100%!important;width:100%!important;flex-shrink:unset;background:var(--dark)}
+  .pc-img-wrap img{width:100%!important;height:100%!important;object-fit:cover!important;
+    transition:transform .65s ease,filter .65s ease;
+    filter:brightness(.72);display:block}
+  .product-card[data-img]:hover .pc-img-wrap img{transform:scale(1.07);filter:brightness(.35)}
+  .pc-img-overlay{display:none!important}
+  /* placeholder shown when a card has no product photo (keeps the same look as photo cards) */
+  .pc-img-placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    font-size:3.6rem;line-height:1;background:linear-gradient(135deg,#0d2137 0%,#1c3a5a 100%);
+    filter:brightness(.92);transition:transform .65s ease,filter .65s ease}
+  .product-card[data-img]:hover .pc-img-placeholder{transform:scale(1.07);filter:brightness(.55)}
+  /* bottom reveal overlay — always partially visible */
+  .pc-reveal{
+    position:absolute;bottom:0;left:0;right:0;z-index:2;
+    padding:0 20px 18px;
+    background:linear-gradient(to top,rgba(0,0,0,.92) 0%,rgba(0,0,0,.55) 45%,transparent 100%);
+    transition:background .4s ease;
+  }
+  .product-card[data-img]:hover .pc-reveal{
+    background:linear-gradient(to top,rgba(200,2,34,.97) 0%,rgba(160,2,24,.75) 50%,transparent 100%);
+  }
+  .pc-reveal__badge{
+    display:inline-block;background:var(--red);color:#fff;
+    font-size:.58rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;
+    padding:3px 9px;margin-bottom:10px;
+    transform:translateY(6px);opacity:0;transition:all .35s ease;
+  }
+  .product-card[data-img]:hover .pc-reveal__badge{transform:translateY(0);opacity:1}
+  .pc-reveal__name{
+    font-size:.95rem;font-weight:900;color:#fff;line-height:1.28;
+    text-transform:uppercase;letter-spacing:.03em;margin-bottom:6px;
+  }
+  .pc-reveal__spec{
+    font-size:.7rem;font-weight:700;color:rgba(255,255,255,.72);
+    display:flex;align-items:center;gap:7px;margin-bottom:0;
+    transition:margin-bottom .35s ease;
+  }
+  .pc-reveal__spec-sep{width:20px;height:2px;background:var(--red);flex-shrink:0;transition:background .35s ease}
+  .product-card[data-img]:hover .pc-reveal__spec-sep{background:rgba(255,255,255,.6)}
+  .pc-reveal__desc{
+    font-size:.76rem;color:rgba(255,255,255,.82);line-height:1.6;
+    max-height:0;overflow:hidden;
+    transition:max-height .4s ease .05s,opacity .4s ease .05s,margin .35s ease;
+    opacity:0;margin-top:0;
+  }
+  .product-card[data-img]:hover .pc-reveal__desc{max-height:90px;opacity:1;margin-top:10px}
+  .pc-reveal__cta{
+    display:inline-flex;align-items:center;gap:5px;
+    font-size:.68rem;font-weight:900;text-transform:uppercase;letter-spacing:.12em;
+    color:#fff;margin-top:0;
+    opacity:0;transform:translateY(8px);
+    transition:opacity .35s ease .1s,transform .35s ease .1s,margin .35s ease;
+  }
+  .product-card[data-img]:hover .pc-reveal__cta{opacity:1;transform:translateY(0);margin-top:14px}
+  .pc-reveal__cta-arrow{
+    width:22px;height:22px;background:rgba(255,255,255,.18);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-size:.8rem;
+    transition:background .25s ease,transform .25s ease;
+  }
+  .product-card[data-img]:hover .pc-reveal__cta-arrow{background:#fff;color:var(--red);transform:translateX(3px)}
+
+
+  /* Prod tabs on dark bg */
+  .section--dark .prod-tabs{border-bottom-color:rgba(255,255,255,.12)}
+  .section--dark .prod-tab{color:rgba(255,255,255,.5)}
+  .section--dark .prod-tab:hover{color:var(--white)}
+  .section--dark .prod-tab.active{color:var(--white);border-bottom-color:var(--red)}
+  /* Prod grid gap for dark bg */
+  .section--dark .prod-grid{gap:3px;margin-top:0}
+
+  /* PROJECTS */
+  .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .project-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:32px 26px;transition:all var(--trans)}
+  .project-card:hover{background:rgba(224,3,43,.15);border-color:var(--red)}
+  .project-card__icon{font-size:2.2rem;margin-bottom:14px}
+  .project-card__title{font-size:1.02rem;font-weight:700;color:var(--white);margin-bottom:10px;line-height:1.35}
+  .project-card__desc{font-size:.84rem;color:rgba(255,255,255,.58);line-height:1.7}
+  .project-card--img{cursor:pointer}
+  .proj-view-hint{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--red);margin-top:12px;opacity:0;transition:opacity var(--trans)}
+  .project-card--img:hover .proj-view-hint{opacity:1}
+
+  /* NEWS */
+  .na-container{}
+  .na-grid-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .na-card{background:var(--white);border:1px solid var(--gray-lt);overflow:hidden;transition:all var(--trans);display:flex;flex-direction:column;cursor:pointer;text-decoration:none;color:inherit}
+  .na-card:hover{box-shadow:var(--shadow);transform:translateY(-3px);border-color:transparent}
+  .na-img-wrap{height:175px;overflow:hidden;background:var(--gray-bg);flex-shrink:0}
+  .na-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .na-card:hover .na-img-wrap img{transform:scale(1.04)}
+  .na-content{padding:18px;flex:1;display:flex;flex-direction:column}
+  .na-meta{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .na-cat{font-size:.62rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:var(--white);padding:3px 9px;flex-shrink:0}
+  .na-date{font-size:.75rem;color:var(--gray-mid)}
+  .na-title{font-size:.9rem;font-weight:700;color:var(--dark);line-height:1.42;margin-bottom:6px}
+  .na-excerpt{font-size:.78rem;color:var(--gray);line-height:1.6;flex:1}
+  /* filters */
+  .na-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+  .na-filter{padding:8px 18px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--gray);border:1px solid var(--gray-lt);background:var(--white);cursor:pointer;transition:all var(--trans)}
+  .na-filter:hover{color:var(--red);border-color:var(--red)}
+  .na-filter--active{background:var(--red);color:var(--white);border-color:var(--red)}
+  .na-pagination{display:flex;justify-content:center;gap:4px;margin-top:44px;flex-wrap:wrap}
+  .na-pager{min-width:38px;height:38px;padding:0 10px;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;color:var(--gray);border:1px solid var(--gray-lt);cursor:pointer;transition:all var(--trans);background:var(--white)}
+  .na-pager:hover{color:var(--red);border-color:var(--red)}
+  .na-pager--active,.na-pager.na-pager--active{background:var(--red);color:var(--white);border-color:var(--red)}
+  .na-pager:disabled{opacity:.38;cursor:not-allowed}
+
+  /* AWARDS */
+  .awards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px}
+  .award-card{background:var(--white);border:1px solid var(--gray-lt);padding:22px 14px;text-align:center;transition:all var(--trans)}
+  .award-card:hover{border-color:var(--red);box-shadow:var(--shadow)}
+  .award-card__icon{font-size:1.8rem;margin-bottom:8px}
+  .award-card__title{font-size:.74rem;font-weight:700;color:var(--dark);line-height:1.3}
+  .award-card__sub{font-size:.66rem;color:var(--gray-mid);margin-top:3px}
+  /* Clickable cert cards */
+  .award-card--cert{cursor:pointer}
+  .cert-view-hint{font-size:.61rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--red);margin-top:9px;opacity:0;transition:opacity var(--trans)}
+  .award-card--cert:hover .cert-view-hint{opacity:1}
+  /* Cert lightbox */
+  .cert-lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.90);z-index:2000;align-items:center;justify-content:center;padding:20px}
+  .cert-lb.open{display:flex}
+  .cert-lb__wrap{position:relative;background:var(--white);padding:10px;display:inline-flex;flex-direction:column;align-items:center;max-width:92vw;max-height:92vh}
+  .cert-lb__img{display:block;max-width:calc(92vw - 20px);max-height:calc(88vh - 48px);object-fit:contain}
+  .cert-lb__name{font-size:.72rem;font-weight:700;color:var(--gray-mid);text-align:center;margin-top:8px;letter-spacing:.05em;text-transform:uppercase}
+  .cert-lb__close{position:absolute;top:-16px;right:-16px;width:34px;height:34px;background:var(--red);color:var(--white);font-size:1.2rem;border:none;font-family:inherit;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1}
+  .cert-lb__close:hover{background:var(--red-dark)}
+
+  /* CONTACT */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+  .c-info-item{display:flex;gap:14px;margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid var(--gray-lt)}
+  .c-info-item:last-child{border:none;margin:0;padding:0}
+  .c-icon{width:42px;height:42px;background:var(--red);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+  .c-label{font-size:.68rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:var(--gray-mid);margin-bottom:3px}
+  .c-value{font-size:.92rem;font-weight:700;color:var(--dark)}
+  .form-group{margin-bottom:18px}
+  .form-group label{display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--dark);margin-bottom:7px}
+  .form-group input,.form-group select,.form-group textarea{width:100%;padding:11px 14px;border:1px solid var(--gray-lt);font-family:inherit;font-size:.88rem;color:var(--dark);background:var(--white);outline:none;transition:border-color var(--trans)}
+  .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--red)}
+  .form-group textarea{height:110px;resize:vertical}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .form-sub{width:100%;padding:14px;background:var(--red);color:var(--white);font-family:inherit;font-size:.88rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;border:none;cursor:pointer;transition:background var(--trans)}
+  .form-sub:hover{background:var(--red-dark)}
+
+  /* FOOTER */
+  .footer{background:var(--dark3);color:rgba(255,255,255,.55);padding:56px 0 0}
+  .footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1.4fr;gap:44px;margin-bottom:44px}
+  .footer-brand__name{font-size:1.15rem;font-weight:900;color:var(--white);margin-bottom:3px}
+  .footer-brand__sub{font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.35);margin-bottom:16px}
+  .footer-brand p{font-size:.82rem;line-height:1.72;margin-bottom:20px}
+  .footer-social{display:flex;gap:8px}
+  .footer-social a{width:34px;height:34px;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.45);font-size:.82rem;transition:all var(--trans)}
+  .footer-social a:hover{border-color:var(--red);color:var(--white);background:var(--red)}
+  .footer-col__t{font-size:.68rem;font-weight:900;text-transform:uppercase;letter-spacing:.14em;color:var(--white);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .footer-col a{display:block;font-size:.82rem;color:rgba(255,255,255,.5);padding:4px 0;transition:color var(--trans)}
+  .footer-col a:hover{color:var(--red)}
+  .footer-contact-row{display:flex;gap:10px;margin-bottom:11px;font-size:.82rem}
+  .footer-contact-row .fc-icon{color:var(--red);flex-shrink:0;margin-top:2px}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding:18px 0;display:flex;align-items:center;justify-content:space-between;font-size:.75rem}
+  .footer-bottom a{color:rgba(255,255,255,.45);transition:color var(--trans)}
+  .footer-bottom a:hover{color:var(--red)}
+
+  /* MODAL */
+  .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:9999;overflow-y:auto;padding:32px 20px}
+  .modal-overlay.open{display:flex;align-items:flex-start;justify-content:center}
+  .modal-box{background:var(--white);width:100%;max-width:980px;display:grid;grid-template-columns:1fr 1fr;position:relative;animation:mIn .3s ease}
+  @keyframes mIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  .modal-close-btn{position:absolute;top:0;right:0;width:40px;height:40px;background:var(--dark);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:1.3rem;cursor:pointer;z-index:2;transition:background var(--trans);border:none;font-family:inherit}
+  .modal-close-btn:hover{background:var(--red)}
+  .modal-img-container{position:relative;background:var(--gray-bg);min-height:380px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .modal-img{max-width:100%;max-height:480px;object-fit:contain;transform-origin:center;user-select:none}
+  .zoom-controls{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:4px;background:rgba(0,0,0,.7);padding:5px 10px;border-radius:20px}
+  .zoom-btn{width:26px;height:26px;background:transparent;border:1px solid rgba(255,255,255,.3);color:var(--white);font-size:.95rem;display:flex;align-items:center;justify-content:center;cursor:pointer;border-radius:50%;transition:all var(--trans)}
+  .zoom-btn:hover{background:var(--red);border-color:var(--red)}
+  .zoom-level{font-size:.68rem;color:var(--white);min-width:34px;text-align:center}
+  .zoom-hint{font-size:.58rem;color:rgba(255,255,255,.45);text-align:center;position:absolute;bottom:48px;left:50%;transform:translateX(-50%);white-space:nowrap}
+  .modal-body{padding:36px 36px 36px;overflow-y:auto;max-height:80vh}
+  .modal-name{font-size:1.4rem;font-weight:900;color:var(--dark);margin-bottom:12px;line-height:1.2;padding-right:28px}
+  .modal-desc{font-size:.84rem;color:var(--gray);line-height:1.75;margin-bottom:20px}
+  .modal-info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:22px}
+  .modal-info-item{background:var(--gray-bg);padding:11px}
+  .modal-info-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-mid);margin-bottom:3px}
+  .modal-info-value{font-size:.88rem;font-weight:700;color:var(--dark)}
+  .modal-spec-section{margin-top:4px}
+  .modal-spec-title{font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:var(--dark);margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--red)}
+  .modal-spec-table{width:100%;border-collapse:collapse;font-size:.8rem}
+  .modal-spec-table th{background:var(--dark);color:var(--white);padding:9px 11px;text-align:left;font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}
+  .modal-spec-table td{padding:8px 11px;border-bottom:1px solid var(--gray-bg)}
+  .modal-spec-table tr:nth-child(even) td{background:var(--gray-bg)}
+  .modal-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:18px}
+  .modal-tag{font-size:.65rem;font-weight:700;text-transform:uppercase;padding:3px 9px;background:var(--gray-bg);color:var(--gray-mid);letter-spacing:.06em}
+
+  /* FADE ANIM */
+  .fade-in{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
+  .fade-in.visible{opacity:1;transform:none}
+
+  /* RESPONSIVE */
+  @media(max-width:1024px){
+    .nav-mega{width:680px;grid-template-columns:repeat(2,1fr)}
+    .about-grid{gap:44px}
+    .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
+    .awards-grid{grid-template-columns:repeat(4,1fr)}
+  }
+  @media(max-width:768px){
+    .main-nav,.topbar__right{display:none}
+    .hamburger{display:flex}
+    .hero{max-height:600px}
+    .hero-dots{bottom:76px}
+    .hero-strip__inner{grid-template-columns:repeat(3,1fr)}
+    .hero-sector:nth-child(n+4){display:none}
+    .about-grid{grid-template-columns:1fr}
+    .about-imgs{grid-template-rows:160px 160px}
+    .domains-grid{grid-template-columns:repeat(2,1fr)}
+    .prod-grid{grid-template-columns:repeat(2,1fr)}
+    .proj-grid{grid-template-columns:1fr}
+    .na-grid-wrap{grid-template-columns:repeat(2,1fr)}
+    .awards-grid{grid-template-columns:repeat(3,1fr)}
+    .contact-grid{grid-template-columns:1fr}
+    .stats-row{grid-template-columns:repeat(2,1fr)}
+    .modal-box{grid-template-columns:1fr}
+    .modal-img-container{min-height:260px}
+    .section{padding:56px 0}
+    .form-row{grid-template-columns:1fr}
+  }
+  @media(max-width:480px){
+    .prod-grid{grid-template-columns:1fr}
+    .na-grid-wrap{grid-template-columns:1fr}
+    .awards-grid{grid-template-columns:repeat(2,1fr)}
+    .footer-grid{grid-template-columns:1fr}
+    .hero-strip__inner{grid-template-columns:repeat(2,1fr)}
+    .domains-grid{grid-template-columns:repeat(2,1fr)}
+    .stats-row{grid-template-columns:1fr 1fr}
+  }
+
+  /* SKIP LINK — hidden until focused by keyboard */
+  .skip-link:focus{left:0}
+
+  /* ── MOBILE / TOUCH ENHANCEMENTS ────────────────────────────────────────── */
+
+  /* Remove tap highlight flash on iOS/Android */
+  *{-webkit-tap-highlight-color:transparent}
+
+  /* Remove 300ms tap delay on tappable elements */
+  a,button,[onclick]{touch-action:manipulation}
+
+  /* iOS input zoom fix — inputs < 16px cause Safari to auto-zoom on focus */
+  @media(max-width:768px){
+    .form-group input,.form-group select,.form-group textarea{font-size:16px}
+  }
+
+  /* Touch devices: show product card content normally hidden behind hover */
+  @media(hover:none){
+    .product-card[data-img] .pc-reveal__badge{transform:translateY(0);opacity:1}
+    .product-card[data-img] .pc-reveal__desc{max-height:80px;opacity:1;margin-top:8px}
+    .product-card[data-img] .pc-reveal__cta{opacity:1;transform:translateY(0);margin-top:12px}
+    .product-card[data-img] .pc-img-wrap img{filter:brightness(.55)}
+    .product-card[data-img] .pc-reveal{background:linear-gradient(to top,rgba(0,0,0,.92) 0%,rgba(0,0,0,.72) 60%,transparent 100%)}
+    .project-card--img .proj-view-hint{opacity:1}
+    .award-card--cert .cert-view-hint{opacity:1}
+  }
+
+  /* Modal spec table — horizontal scroll on narrow screens */
+  .modal-spec-section{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+  /* Smooth momentum scroll in modal and mobile nav on iOS */
+  .modal-body,.mobile-nav{-webkit-overflow-scrolling:touch}
+
+  /* Prevent background scroll bleed when modal/mobile-nav is open */
+  .modal-overlay,.mobile-nav{overscroll-behavior:contain}
+
+  /* Topbar — hide email on small phones to prevent horizontal overflow */
+  @media(max-width:480px){
+    .topbar__flag + .topbar__sep,
+    .topbar__left a[href^="mailto"]{display:none}
+  }
+
+  /* Hero strip — reduce padding on very small screens */
+  @media(max-width:380px){
+    .hero-sector{padding:14px 10px;gap:8px;font-size:.68rem}
+  }
+
+  /* Footer bottom — stack vertically on tiny screens */
+  @media(max-width:400px){
+    .footer-bottom{flex-direction:column;gap:10px;text-align:center}
+  }
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hailiya Group Australia",
+  "url": "https://www.hailiya.com.au",
+  "logo": "https://www.hailiya.com.au/images/haili-logo.png",
+  "description": "Hailiya Group — Australian distributor of world-class high-performance ropes for marine, defence, safety and outdoor applications. 100+ years of rope technology.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "AU",
+    "addressRegion": "NSW",
+    "addressLocality": "Sydney"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "telephone": "+61-2-8006-2666",
+    "email": "info@hailiya.com.au"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/qingdao-hailiya-group-co-ltd/?viewAsMember=true"
+  ]
+}
+</script>
+</head>
+<body>
+<a href="#hero" class="skip-link" style="position:absolute;left:-9999px;top:0;z-index:9999;padding:8px 16px;background:#e0032b;color:#fff;font-weight:700;">Skip to main content</a>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar__inner">
+      <div class="topbar__left">
+        <span class="topbar__flag">🇦🇺 Australia</span>
+        <span class="topbar__sep">|</span>
+        <a href="mailto:info@hailiya.com.au">info@hailiya.com.au</a>
+        <span class="topbar__sep">|</span>
+        <a href="tel:+61280062666">+61 2 8006 2666</a>
+      </div>
+      <div class="topbar__right">
+        <a href="#news">News &amp; Events</a>
+        <span class="topbar__sep">|</span>
+        <a href="#contact">Contact Us</a>
+        <span class="topbar__sep">|</span>
+        <a href="#about">About</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header" id="site-header" role="banner">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="logo">
+        <img src="images/haili-logo.png" alt="Hailiya Group Logo" width="120" height="46" style="height:46px;width:auto;object-fit:contain;display:block;">
+        <div class="logo__text">
+          <div class="logo__name">Hailiya Group</div>
+          <div class="logo__sub">Australia — Rope Technology</div>
+        </div>
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-item">
+          <a class="nav-link active" href="#products">Products <span class="nav-arrow">▾</span></a>
+          <div class="nav-mega">
+            <div class="mega-col">
+              <div class="mega-col__title">🌊 Marine</div>
+              <a href="#products" onclick="switchTab('marine')">UHMWPE 12-Strand Rope</a>
+              <a href="#products" onclick="switchTab('marine')">Polyester 12-Strand Rope</a>
+              <a href="#products" onclick="switchTab('marine')">Aramid 12-Strand Rope</a>
+              <a href="#products" onclick="switchTab('marine')">Vectran 12-Strand Rope</a>
+              <a href="#products" onclick="switchTab('marine')">Non-Metallic Cable Grip</a>
+              <a href="#products" onclick="switchTab('marine')">Fiber Chain Belt</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col__title">🛡️ Defence</div>
+              <a href="#products" onclick="switchTab('defence')">High-Strength UHMWPE Rope</a>
+              <a href="#products" onclick="switchTab('defence')">Fast Rope</a>
+              <a href="#products" onclick="switchTab('defence')">Combat Training System</a>
+              <a href="#products" onclick="switchTab('defence')">Tow Rope</a>
+              <a href="#products" onclick="switchTab('defence')">Soft Shackles</a>
+              <a href="#products" onclick="switchTab('defence')">Fireproof Rope</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col__title">🔒 Safety</div>
+              <a href="#products" onclick="switchTab('safety')">Static Rope EN1891</a>
+              <a href="#products" onclick="switchTab('safety')">Dynamic Rope EN892</a>
+              <a href="#products" onclick="switchTab('safety')">Accessory Cord EN564</a>
+              <a href="#products" onclick="switchTab('safety')">Rescue Training Systems</a>
+              <a href="#products" onclick="switchTab('safety')">Umbilical Cable</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col__title">🏔️ Outdoor</div>
+              <a href="#products" onclick="switchTab('outdoor')">Dynamic Rope</a>
+              <a href="#products" onclick="switchTab('outdoor')">Static Rope</a>
+              <a href="#products" onclick="switchTab('outdoor')">Kinetic Recovery Rope</a>
+              <a href="#products" onclick="switchTab('outdoor')">Soft Shackle</a>
+              <a href="#products" onclick="switchTab('outdoor')">Winch Rope</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#news">News</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div style="display:flex;align-items:center;gap:12px">
+        <a class="header-cta" href="#contact">Get a Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="nav-item">
+    <a class="nav-link" href="#products" onclick="closeMenu()">Products</a>
+  </div>
+  <div class="nav-item">
+    <a class="nav-link" href="#about" onclick="closeMenu()">About</a>
+  </div>
+  <div class="nav-item">
+    <a class="nav-link" href="#projects" onclick="closeMenu()">Projects</a>
+  </div>
+  <div class="nav-item">
+    <a class="nav-link" href="#news" onclick="closeMenu()">News</a>
+  </div>
+  <div class="nav-item">
+    <a class="nav-link" href="#contact" onclick="closeMenu()">Contact</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero" role="main">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="videos/company-promo.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-body">
+    <div class="container">
+      <div class="hero-label">Hailiya Group Australia</div>
+      <h1 class="hero-title">World-Class<br><em>Rope Technology</em></h1>
+      <p class="hero-sub">From deep-sea exploration to combat operations — 100+ years of precision engineering, trusted by navies, rescue teams and industry leaders across 30+ nations.</p>
+      <div class="hero-ctas">
+        <a class="btn-red" href="#products">Explore Products</a>
+        <a class="btn-ghost" href="#about">Our Story</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-strip">
+    <div class="hero-strip__inner">
+      <div class="hero-sector active-tab" onclick="goTab('marine')"><span class="hero-sector__icon">🌊</span>Marine</div>
+      <div class="hero-sector" onclick="goTab('defence')"><span class="hero-sector__icon">🛡️</span>Defence</div>
+      <div class="hero-sector" onclick="goTab('safety')"><span class="hero-sector__icon">🔒</span>Safety</div>
+      <div class="hero-sector" onclick="goTab('outdoor')"><span class="hero-sector__icon">🏔️</span>Outdoor</div>
+      <div class="hero-sector" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})"><span class="hero-sector__icon">🏗️</span>Projects</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-row">
+  <div class="stat-cell">
+    <div class="stat-cell__num"><span id="cnt-years">0</span><em>+</em></div>
+    <div class="stat-cell__lbl">Years of Innovation</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-cell__num"><span id="cnt-countries">0</span><em>+</em></div>
+    <div class="stat-cell__lbl">Countries Served</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-cell__num"><span id="cnt-products">0</span><em>+</em></div>
+    <div class="stat-cell__lbl">Product Lines</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-cell__num"><span id="cnt-certs">0</span><em>+</em></div>
+    <div class="stat-cell__lbl">Certifications Held</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid fade-in">
+      <div class="about-imgs">
+        <img src="images/workshop_exterior.png" alt="Huakai Manufacturing Facility" width="600" height="430">
+        <img src="images/workshop_factory.jpg" alt="Production Line" width="600" height="210">
+        <img src="images/workshop_interior.jpg" alt="Quality Testing" width="600" height="210">
+      </div>
+      <div class="about-text">
+        <span class="sec-label">Our Story</span>
+        <div class="sec-rule"></div>
+        <h2 class="sec-title">A Century of Rope Innovation</h2>
+        <p>Founded in 1923 as Xiecheng Lace Factory in Qingdao, China, Hailiya Group has grown from a small textile workshop into one of the world's leading manufacturers of high-performance synthetic ropes.</p>
+        <p>Today, our Australian operations bring this century of expertise directly to Asia-Pacific markets — supplying world-class UHMWPE, Aramid, Vectran and Polyester ropes to marine, defence, safety and outdoor sectors.</p>
+        <p>Every rope we manufacture meets the most stringent international standards — CE, EN892, EN1891, UIAA — with an in-house R&amp;D team and patented technologies developed alongside Tsinghua University.</p>
+        <div class="about-kpis">
+          <div><div class="about-kpi__n">100<em>+</em></div><div class="about-kpi__l">Years Founded</div></div>
+          <div><div class="about-kpi__n">30<em>+</em></div><div class="about-kpi__l">Export Markets</div></div>
+          <div><div class="about-kpi__n">50<em>+</em></div><div class="about-kpi__l">Certifications</div></div>
+        </div>
+        <a class="btn-red" href="#contact">Talk to Our Team</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOMAINS -->
+<div class="domains-grid">
+  <div class="dom-card fade-in" onclick="goTab('marine')">
+    <img src="images/prod_uhmwpe_1.jpg" alt="Marine" loading="lazy" width="300" height="375">
+    <div class="dom-card__ov"></div>
+    <div class="dom-card__body">
+      <div class="dom-card__icon">🌊</div>
+      <div class="dom-card__name">Marine</div>
+      <div class="dom-card__count">8 Product Lines</div>
+    </div>
+    <div class="dom-card__arrow">→</div>
+  </div>
+  <div class="dom-card fade-in" onclick="goTab('defence')">
+    <img src="images/prod_fast_rope.jpg" alt="Defence" loading="lazy" width="300" height="375">
+    <div class="dom-card__ov"></div>
+    <div class="dom-card__body">
+      <div class="dom-card__icon">🛡️</div>
+      <div class="dom-card__name">Defence</div>
+      <div class="dom-card__count">9 Product Lines</div>
+    </div>
+    <div class="dom-card__arrow">→</div>
+  </div>
+  <div class="dom-card fade-in" onclick="goTab('safety')">
+    <img src="images/products/od-static.jpg" alt="Safety" loading="lazy" width="300" height="375">
+    <div class="dom-card__ov"></div>
+    <div class="dom-card__body">
+      <div class="dom-card__icon">🔒</div>
+      <div class="dom-card__name">Safety</div>
+      <div class="dom-card__count">5 Product Lines</div>
+    </div>
+    <div class="dom-card__arrow">→</div>
+  </div>
+  <div class="dom-card fade-in" onclick="goTab('outdoor')">
+    <img src="images/products/od-kinetic.jpg" alt="Outdoor" loading="lazy" width="300" height="375">
+    <div class="dom-card__ov"></div>
+    <div class="dom-card__body">
+      <div class="dom-card__icon">🏔️</div>
+      <div class="dom-card__name">Outdoor</div>
+      <div class="dom-card__count">5 Product Lines</div>
+    </div>
+    <div class="dom-card__arrow">→</div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="section section--dark" id="products">
+  <div class="container">
+    <div class="sec-header fade-in">
+      <span class="sec-label">Product Range</span>
+      <div class="sec-rule"></div>
+      <h2 class="sec-title">World-Class Rope Technology</h2>
+      <p class="sec-sub">Advanced synthetic ropes engineered from UHMWPE, Aramid, Vectran and Polyester — for the full spectrum of marine, defence, safety and outdoor applications.</p>
+    </div>
+    <div class="prod-tabs">
+      <button class="prod-tab active" id="tab-marine"  onclick="switchTab('marine')">🌊 Marine</button>
+      <button class="prod-tab" id="tab-defence" onclick="switchTab('defence')">🛡️ Defence</button>
+      <button class="prod-tab" id="tab-safety"  onclick="switchTab('safety')">🔒 Safety</button>
+      <button class="prod-tab" id="tab-outdoor" onclick="switchTab('outdoor')">🏔️ Outdoor</button>
+    </div>
+    <div class="prod-panel active" id="panel-marine">
+      <div class="prod-grid" id="grid-marine"></div>
+    </div>
+    <div class="prod-panel" id="panel-defence">
+      <div class="prod-grid" id="grid-defence"></div>
+    </div>
+    <div class="prod-panel" id="panel-safety">
+      <div class="prod-grid" id="grid-safety"></div>
+    </div>
+    <div class="prod-panel" id="panel-outdoor">
+      <div class="prod-grid" id="grid-outdoor"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section section--dark" id="projects">
+  <div class="container">
+    <div class="sec-header fade-in">
+      <span class="sec-label">Notable Projects</span>
+      <div class="sec-rule"></div>
+      <h2 class="sec-title">Trusted by the World's Greatest Missions</h2>
+      <p class="sec-sub">For decades, Hailiya Group has provided ropes and technical support to the most demanding frontier programs — from deep-sea exploration to space launches.</p>
+    </div>
+    <div class="proj-grid">
+      <div class="project-card project-card--img fade-in" data-cert-img="images/news_jiaolong.jpg" data-cert-name="Jiaolong Deep-Sea Diving Vehicle">
+          <div class="project-card__icon">🤿</div>
+          <div class="project-card__title">Jiaolong Deep-Sea Diving Vehicle</div>
+          <div class="project-card__desc">Supplied critical rope systems for China's "Jiaolong" manned deep-sea submersible — the nation's most celebrated deep-sea exploration platform, diving to over 7,000 meters.</div>
+          <div class="proj-view-hint">View Photo</div>
+        </div>
+        <div class="project-card fade-in fade-in-delay-1">
+          <div class="project-card__icon">🚀</div>
+          <div class="project-card__title">China Space Program</div>
+          <div class="project-card__desc">Provided rope and cable systems for China's manned spacecraft program, demonstrating performance at the extreme end of safety, weight, and reliability requirements.</div>
+        </div>
+        <div class="project-card fade-in fade-in-delay-2">
+          <div class="project-card__icon">🔴</div>
+          <div class="project-card__title">Mars Landing Plan</div>
+          <div class="project-card__desc">Technical support for China's interplanetary Mars landing mission — requiring rope solutions certified for unprecedented environmental extremes and zero failure tolerance.</div>
+        </div>
+        <div class="project-card fade-in">
+          <div class="project-card__icon">🧊</div>
+          <div class="project-card__title">Polar Scientific Research</div>
+          <div class="project-card__desc">Equipment and technical support for Chinese Antarctic and Arctic polar expeditions where temperatures plunge below −40°C and conditions are among the harshest on Earth.</div>
+        </div>
+        <div class="project-card fade-in fade-in-delay-1">
+          <div class="project-card__icon">⚓</div>
+          <div class="project-card__title">Navy Ship Anchor &amp; Operation Systems</div>
+          <div class="project-card__desc">Engineered mooring and anchoring rope systems for the Chinese Navy, combining anti-rebound technology and extreme load capacity for surface vessel operations.</div>
+        </div>
+        <div class="project-card fade-in fade-in-delay-2">
+          <div class="project-card__icon">🌊</div>
+          <div class="project-card__title">National Ocean Strategy Program</div>
+          <div class="project-card__desc">Long-term partner to China's national ocean strategic leading project, supplying specialized marine ropes to support China's expanding ocean economy and research capabilities.</div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="section" id="news">
+  <div class="container">
+    <div class="sec-header fade-in">
+      <span class="sec-label">News &amp; Insights</span>
+      <div class="sec-rule"></div>
+      <h2 class="sec-title">Latest from Hailiya</h2>
+      <p class="sec-sub">Industry news, product updates, and insights from the world of high-performance ropes — marine, defence, safety and outdoor.</p>
+    </div>
+    <div class="na-filters">
+      <button class="na-filter na-filter--active" onclick="naFilter('All')">All</button>
+      <button class="na-filter" onclick="naFilter('Safety')">Safety</button>
+      <button class="na-filter" onclick="naFilter('Marine')">Marine</button>
+      <button class="na-filter" onclick="naFilter('Defence')">Defence</button>
+      <button class="na-filter" onclick="naFilter('Outdoor')">Outdoor</button>
+      <button class="na-filter" onclick="naFilter('Company')">Company</button>
+      <button class="na-filter" onclick="naFilter('Industry')">Industry</button>
+    </div>
+    <div id="na-container" class="na-grid-wrap"></div>
+    <div class="na-pagination"></div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section class="section section--alt" id="awards">
+  <div class="container">
+    <div class="sec-header sec-header--c fade-in">
+      <span class="sec-label">Certifications &amp; Awards</span>
+      <div class="sec-rule"></div>
+      <h2 class="sec-title">Internationally Certified Quality</h2>
+      <p class="sec-sub">Every Hailiya product meets the most stringent international standards — from ISO management systems to CE product certifications and national science awards.</p>
+    </div>
+    <div class="awards-grid">
+      <div class="award-card fade-in">
+          <div class="award-card__icon">🏆</div>
+          <div class="award-card__title">National Science and Technology Progress Award</div>
+          <div class="award-card__body">Second Prize — China's highest recognition for science &amp; technology achievement.</div>
+        </div>
+        <div class="award-card fade-in fade-in-delay-1">
+          <div class="award-card__icon">🥇</div>
+          <div class="award-card__title">China Ocean Engineering Science &amp; Technology Award</div>
+          <div class="award-card__body">Second Prize for breakthrough contributions to ocean engineering.</div>
+        </div>
+        <div class="award-card fade-in fade-in-delay-2">
+          <div class="award-card__icon">🏅</div>
+          <div class="award-card__title">Excellent Patent Award of China Textile Industry</div>
+          <div class="award-card__body">Recognizing the quality and innovation of our 300+ patent portfolio.</div>
+        </div>
+        <div class="award-card fade-in fade-in-delay-3">
+          <div class="award-card__icon">⭐</div>
+          <div class="award-card__title">National High-Tech Enterprise</div>
+          <div class="award-card__body">Certified National High-tech Enterprise by the Chinese government.</div>
+        </div>
+        <div class="award-card fade-in">
+          <div class="award-card__icon">🎖️</div>
+          <div class="award-card__title">Qingdao Science &amp; Technology Progress Award</div>
+          <div class="award-card__body">First Prize for science and technology innovation in Qingdao.</div>
+        </div>
+        <div class="award-card fade-in fade-in-delay-1">
+          <div class="award-card__icon">🔬</div>
+          <div class="award-card__title">Shandong Academy of Experts Workstation</div>
+          <div class="award-card__body">Provincial recognition for our world-class R&amp;D infrastructure.</div>
+        </div>
+        <div class="award-card fade-in fade-in-delay-2">
+          <div class="award-card__icon">🦌</div>
+          <div class="award-card__title">Shandong Gazelle Enterprise</div>
+          <div class="award-card__body">Recognized as a high-growth innovative enterprise by Shandong Province.</div>
+        </div>
+        <div class="award-card fade-in fade-in-delay-3">
+          <div class="award-card__icon">📜</div>
+          <div class="award-card__title">300+ Patents</div>
+          <div class="award-card__body">A patent portfolio spanning rope technology, materials science, and manufacturing processes.</div>
+        </div>
+
+        <div class="award-card award-card--cert fade-in" data-cert-img="images/certs/ISO9001.jpg" data-cert-name="ISO 9001:2015">
+          <img src="images/certs/ISO9001.jpg" alt="ISO 9001" loading="lazy" width="64" height="64" style="width:64px;height:64px;object-fit:contain;border-radius:8px;margin-bottom:10px;">
+          <div class="award-card__title">ISO 9001:2015</div>
+          <div class="award-card__body">Quality Management System certification covering all manufacturing and quality control processes.</div>
+          <div class="cert-view-hint">View Certificate</div>
+        </div>
+        <div class="award-card award-card--cert fade-in fade-in-delay-1" data-cert-img="images/certs/ISO14001.jpg" data-cert-name="ISO 14001:2015">
+          <img src="images/certs/ISO14001.jpg" alt="ISO 14001" loading="lazy" width="64" height="64" style="width:64px;height:64px;object-fit:contain;border-radius:8px;margin-bottom:10px;">
+          <div class="award-card__title">ISO 14001:2015</div>
+          <div class="award-card__body">Environmental Management System certification ensuring sustainable manufacturing practices.</div>
+          <div class="cert-view-hint">View Certificate</div>
+        </div>
+        <div class="award-card award-card--cert fade-in fade-in-delay-2" data-cert-img="images/certs/ISO45001.jpg" data-cert-name="ISO 45001:2018">
+          <img src="images/certs/ISO45001.jpg" alt="ISO 45001" loading="lazy" width="64" height="64" style="width:64px;height:64px;object-fit:contain;border-radius:8px;margin-bottom:10px;">
+          <div class="award-card__title">ISO 45001:2018</div>
+          <div class="award-card__body">Occupational Health &amp; Safety Management System — protecting our people and partners worldwide.</div>
+          <div class="cert-view-hint">View Certificate</div>
+        </div>
+        <div class="award-card award-card--cert fade-in fade-in-delay-2" data-cert-img="images/certs/OHSAS18001.jpg" data-cert-name="OHSAS 18001">
+          <img src="images/certs/OHSAS18001.jpg" alt="OHSAS 18001" loading="lazy" width="64" height="64" style="width:64px;height:64px;object-fit:contain;border-radius:8px;margin-bottom:10px;">
+          <div class="award-card__title">OHSAS 18001</div>
+          <div class="award-card__body">International occupational health and safety management standard, predecessor to ISO 45001.</div>
+          <div class="cert-view-hint">View Certificate</div>
+        </div>
+        <div class="award-card award-card--cert fade-in fade-in-delay-2" data-cert-img="images/certs/CE-static-rope.png" data-cert-name="CE — Static Rope EN1891">
+          <img src="images/certs/CE-static-rope.png" alt="CE Certification" loading="lazy" width="64" height="64" style="width:64px;height:64px;object-fit:contain;border-radius:8px;margin-bottom:10px;">
+          <div class="award-card__title">CE — Static Rope</div>
+          <div class="award-card__body">European CE certification for Static Rope EN1891 — Type A, covering diameters from 9.6 mm to 11 mm.</div>
+          <div class="cert-view-hint">View Certificate</div>
+        </div>
+        <div class="award-card award-card--cert fade-in fade-in-delay-3" data-cert-img="images/certs/CE-static-rope-10.5mm.png" data-cert-name="CE — Static Rope 10.5mm">
+          <img src="images/certs/CE-static-rope-10.5mm.png" alt="CE Certification 10.5mm" loading="lazy" width="64" height="64" style="width:64px;height:64px;object-fit:contain;border-radius:8px;margin-bottom:10px;">
+          <div class="award-card__title">CE — Static Rope 10.5mm</div>
+          <div class="award-card__body">CE certification for 10.5mm Static Rope EN1891 Type A.</div>
+          <div class="cert-view-hint">View Certificate</div>
+        </div>
+        <div class="award-card award-card--cert fade-in" data-cert-img="images/certs/CE-static-rope-11mm.png" data-cert-name="CE — Static Rope 11mm">
+          <img src="images/certs/CE-static-rope-11mm.png" alt="CE Certification 11mm" loading="lazy" width="64" height="64" style="width:64px;height:64px;object-fit:contain;border-radius:8px;margin-bottom:10px;">
+          <div class="award-card__title">CE — Static Rope 11mm</div>
+          <div class="award-card__body">CE certification for 11mm Static Rope EN1891 Type A.</div>
+          <div class="cert-view-hint">View Certificate</div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="sec-header fade-in">
+      <span class="sec-label">Get in Touch</span>
+      <div class="sec-rule"></div>
+      <h2 class="sec-title">Contact Hailiya Australia</h2>
+      <p class="sec-sub">Whether you need a custom rope solution, a product quote, or technical advice — our Australian team is here to help.</p>
+    </div>
+    <div class="contact-grid fade-in">
+      <div>
+        <div class="c-info-item">
+          <div class="c-icon">📍</div>
+          <div>
+            <div class="c-label">Address</div>
+            <div class="c-value">Sydney, New South Wales, Australia</div>
+          </div>
+        </div>
+        <div class="c-info-item">
+          <div class="c-icon">📧</div>
+          <div>
+            <div class="c-label">Email</div>
+            <div class="c-value">info@hailiya.com.au</div>
+          </div>
+        </div>
+        <div class="c-info-item">
+          <div class="c-icon">📞</div>
+          <div>
+            <div class="c-label">Phone</div>
+            <div class="c-value">+61 2 8006 2666</div>
+          </div>
+        </div>
+        <div class="c-info-item">
+          <div class="c-icon">🕐</div>
+          <div>
+            <div class="c-label">Business Hours</div>
+            <div class="c-value">Mon–Fri 8:30am – 5:30pm AEST</div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cf-name">Full Name *</label>
+            <input type="text" id="cf-name" placeholder="Your name" required maxlength="100" autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="cf-company">Company</label>
+            <input type="text" id="cf-company" placeholder="Organisation" maxlength="100" autocomplete="organization">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cf-email">Email *</label>
+            <input type="email" id="cf-email" placeholder="your@email.com" required maxlength="150" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="cf-phone">Phone</label>
+            <input type="tel" id="cf-phone" placeholder="+61 ..." maxlength="20" autocomplete="tel">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cf-sector">Sector</label>
+          <select id="cf-sector">
+            <option value="">Select a sector...</option>
+            <option>Marine</option>
+            <option>Defence</option>
+            <option>Safety &amp; Rescue</option>
+            <option>Outdoor &amp; Recreation</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="cf-msg">Message *</label>
+          <textarea id="cf-msg" placeholder="Tell us about your rope requirements..." required maxlength="1000" autocomplete="off"></textarea>
+        </div>
+        <button type="submit" class="form-sub">Send Enquiry →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand__name">Hailiya Group</div>
+        <div class="footer-brand__sub">Australia — High-Performance Rope Technology</div>
+        <p>Australian distributor for Qingdao Huakai Ocean Science &amp; Technology — a century-old innovator in synthetic rope manufacturing, trusted by navies, rescue services and industry leaders worldwide.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/qingdao-hailiya-group-co-ltd/?viewAsMember=true"
+             title="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+          <a href="https://www.facebook.com/profile.php?id=61552243805952"
+             title="Facebook" target="_blank" rel="noopener noreferrer">f</a>
+          <a href="https://www.instagram.com/huakairope1922/"
+             title="Instagram" target="_blank" rel="noopener noreferrer">📷</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col__t">Products</div>
+        <a href="#products" onclick="switchTab('marine')">Marine Ropes</a>
+        <a href="#products" onclick="switchTab('defence')">Defence Ropes</a>
+        <a href="#products" onclick="switchTab('safety')">Safety Ropes</a>
+        <a href="#products" onclick="switchTab('outdoor')">Outdoor Ropes</a>
+        <a href="#awards">Certifications</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col__t">Company</div>
+        <a href="#about">About Us</a>
+        <a href="#projects">Notable Projects</a>
+        <a href="#news">News &amp; Events</a>
+        <a href="#contact">Contact</a>
+        <a href="#awards">Awards</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col__t">Contact Australia</div>
+        <div class="footer-contact-row"><span class="fc-icon">📧</span><span>info@hailiya.com.au</span></div>
+        <div class="footer-contact-row"><span class="fc-icon">📞</span><span>+61 2 8006 2666</span></div>
+        <div class="footer-contact-row"><span class="fc-icon">📍</span><span>Sydney, NSW, Australia</span></div>
+        <div class="footer-contact-row"><span class="fc-icon">🕐</span><span>Mon–Fri 8:30am–5:30pm AEST</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;width:100%">
+      <span>© 2026 Hailiya Group Australia. All rights reserved.
+        <a href="privacy.html" style="color:rgba(255,255,255,.45);margin-left:16px;transition:color .26s ease;" onmouseover="this.style.color='#e0032b'" onmouseout="this.style.color='rgba(255,255,255,.45)'">Privacy Policy</a>
+      </span>
+      <span>Australian distributor of Qingdao Huakai Ocean Science &amp; Technology</span>
+    </div>
+  </div>
+</footer>
+
+<!-- CERT LIGHTBOX -->
+<div class="cert-lb" id="certLightbox" role="dialog" aria-modal="true" aria-label="Certificate viewer">
+  <div class="cert-lb__wrap" id="certLbWrap">
+    <button class="cert-lb__close" id="certLbClose" aria-label="Close certificate">&times;</button>
+    <img src="" alt="" class="cert-lb__img" id="certLbImg">
+    <div class="cert-lb__name" id="certLbName"></div>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="productModal">
+  <div class="modal-box" id="modalWrap">
+    <button class="modal-close-btn" id="modalCloseBtn" title="Close">&times;</button>
+    <div class="modal-img-container" id="modalImgContainer">
+      <img src="" alt="" class="modal-img" id="modalImg" loading="lazy">
+      <div class="zoom-controls">
+        <button class="zoom-btn" id="zoomOut">−</button>
+        <span class="zoom-level" id="zoomLevel">100%</span>
+        <button class="zoom-btn" id="zoomReset">⊙</button>
+        <button class="zoom-btn" id="zoomIn">+</button>
+      </div>
+      <div class="zoom-hint">Scroll to zoom · Drag to pan</div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-name" id="modalName"></div>
+      <div class="modal-desc" id="modalDesc"></div>
+      <div class="modal-info-grid" id="modalInfoGrid"></div>
+      <div class="modal-spec-section" id="modalSpecSection" style="display:none">
+        <div class="modal-spec-title">Technical Specifications</div>
+        <div style="overflow-x:auto"><table class="modal-spec-table" id="modalSpecTable"></table></div>
+      </div>
+      <div class="modal-tags" id="modalTags"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+
+  // ── PRODUCT SPECS ─────────────────────────────────────────────────────────
+  var PRODUCT_SPECS = {
+    "UHMWPE 12-Strand Single Braided Rope": {
+      info: [["Material","UHMWPE (Ultra-High-MW Polyethylene)"],["Melting Point","145 °C"],["Density","0.97 g/cm³ (floats on water)"],["Standards","ISO / GB"]],
+      cols: ["Diameter (mm)","Breaking Strength (kgf)","Model"],
+      rows: [["2","310","H-S12U2"],["8","6,000","H-S12U8"],["12","13,500","H-S12U12"],["16","24,000","H-S12U16"],["20","34,700","H-S12U20"],["24","48,000","H-S12U24"],["28","62,300","H-S12U28"],["30","70,500","H-S12U30"]]
+    },
+    "Polyester 12-Strand Single Braided Rope": {
+      info: [["Material","High-quality Polyester Fiber"],["Diameter Range","2 – 30 mm"],["Applications","Ships, Fisheries, Drilling Platforms"],["Standards","ISO / GB"]],
+      cols: ["Diameter (mm)","Breaking Strength (kgf)","Model"],
+      rows: [["2","145","H-S12T2"],["8","2,354","H-S12T8"],["12","4,936","H-S12T12"],["16","8,200","H-S12T16"],["20","11,400","H-S12T20"],["24","17,390","H-S12T24"],["30","26,690","H-S12T30"]]
+    },
+    "Aramid 12-Strand Single Braided Rope": {
+      info: [["Material","Aramid Fiber (Kevlar® type)"],["Diameter Range","2 – 30 mm"],["Features","Heat, abrasion & chemical resistant"],["Applications","Defence, Ocean Engineering"]],
+      cols: ["Diameter (mm)","Breaking Strength (kgf)","Model"],
+      rows: [["2","400","H-S12A2"],["8","5,200","H-S12A8"],["12","12,000","H-S12A12"],["16","20,000","H-S12A16"],["20","28,000","H-S12A20"],["24","38,000","H-S12A24"],["30","60,000","H-S12A30"]]
+    },
+    "Vectran 12-Strand Single Braided Rope": {
+      info: [["Material","High-modulus Vectran® Fiber"],["Diameter Range","2 – 30 mm"],["Features","Zero creep, low elongation, UV resistant"],["Applications","High-precision marine & aerospace"]],
+      cols: ["Diameter (mm)","Breaking Strength (kgf)","Model"],
+      rows: [["2","280","H-S12V2"],["8","6,000","H-S12V8"],["12","11,200","H-S12V12"],["16","19,500","H-S12V16"],["20","27,000","H-S12V20"],["24","38,500","H-S12V24"],["30","55,900","H-S12V30"]]
+    },
+    "Aramid III 12-Strand Single Braided Rope": {
+      info: [["Material","Para-aramid Heterocyclic (Aramid III)"],["Diameter Range","2 – 30 mm"],["Features","Ultra-high tensile, extreme heat & chemical resistance"],["Applications","Aerospace, Defence, Cutting-edge R&D"]],
+      cols: ["Diameter (mm)","Breaking Strength (kgf)","Model"],
+      rows: [["2","510","H-S12F2"],["8","7,170","H-S12F8"],["12","15,170","H-S12F12"],["16","26,910","H-S12F16"],["20","35,970","H-S12F20"],["24","55,760","H-S12F24"],["30","83,110","H-S12F30"]]
+    },
+    "Non-metallic Cable Grip Sleeving": {
+      info: [["Material","Aramid Fiber + TPU Composite"],["Cable Diameter","4 – 30 mm"],["Features","Insulation, corrosion-free, lightweight"],["Applications","Marine observation equipment"]],
+      cols: ["Compatible Cable Ø (mm)","Breaking Strength (kgf)","Sleeve Length (m)"],
+      rows: [["4–10","400","0.6"],["7–16","800","0.6"],["12–20","1,250","1.2"],["15–25","1,500","1.5"],["15–30","2,500","2.0"]]
+    },
+    "Synthetic Grips": {
+      info: [["Materials","Kevlar® and Vectran®"],["Coating","Polyurethane anti-wear"],["Features","No-tool loops, high-temp resistant, rust-free"],["Applications","Power transmission, marine, shipbuilding"]],
+      cols: ["Model","Material","Working Load","Breaking Strength","Loop Eye"],
+      rows: [["H-SZK8","Kevlar®","500 lb / 228 kg","5,500 lb / 1,137 kg","6 in / 152 mm"],["H-SZK10","Kevlar®","1,000 lb / 455 kg","5,000 lb / 2,273 kg","6 in / 152 mm"],["H-SZK12","Kevlar®","2,000 lb / 909 kg","10,000 lb / 4,545 kg","6 in / 152 mm"],["H-SZV8","Vectran®","600 lb / 273 kg","3,000 lb / 1,364 kg","6 in / 152 mm"],["H-SZV10","Vectran®","1,200 lb / 545 kg","6,000 lb / 2,727 kg","6 in / 152 mm"],["H-SZV12","Vectran®","2,400 lb / 1,094 kg","12,000 lb / 5,456 kg","6 in / 152 mm"]]
+    },
+    "Fiber Chain Belt": {
+      info: [["Material","UHMWPE"],["Safety Factor","4×"],["Operating Temp.","-40 °C to +70 °C"],["Applications","Industrial lifting, marine operations"]],
+      cols: ["Model","Rated Load (kgf)","Ring Width (mm)","Ring Thickness (mm)","Weight (g/m)"],
+      rows: [["XWLDU1115","2,600","15","11","320"],["XWLDU1120","4,000","20","11","470"],["XWLDU1525","6,800","25","15","580"],["XWLDU1530","5,000","30","15","890"],["XWLDU1540","10,300","40","15","1,120"]]
+    },
+    "Umbilical Cable": {
+      info: [["Breaking Strength","1,800 kgf"],["Ultimate Load","1,000 kgf"],["Reinforcement","Vectran®"],["Filling Material","Vectran®"]],
+      cols: ["Property","Value"],
+      rows: [["Conductor","0.2 mm², 40/0.08 mm wire gauge"],["Insulation Thickness","0.25 mm"],["Cable Sheath OD","4 ± 0.2 mm"],["DC Resistance","≤ 95.0 Ω/km @ 20 °C"],["Insulation Resistance","≥ 12 kΩ/km @ 70 °C"],["Dielectric Strength","2.0 kV AC, 5 min (no breakdown)"],["Outer Jacket","PET"]]
+    },
+    "Static Rope (EN1891)": {
+      info: [["Standard","EN1891 (Low Elongation Kernmantel)"],["Material","Nylon / Nylon+Polyester"],["Elongation","< 5% at rated load"],["Applications","Rescue, height safety, descending"]],
+      cols: ["Type","Diameter (mm)","Breaking Strength (kN)","Elongation (%)","Weight (g/m)"],
+      rows: [["A-DSJ10.5 (Classic)","10.5","30.3","3.4","74"],["A-DSJ11 (Classic)","11","30.9","4.5","81"],["A-DSJ11.5 (Classic)","11.5","33","2.8","87.2"],["A-DSJ12 (Classic)","12","42","2.8","97"],["A-JTNT9.6l (Low Stretch)","9.6","30","2.5","67"],["A-JTNT10.5 (Low Stretch)","10.5","34","2.0","76"],["A-JTNT11 (Low Stretch)","11","34.3","3.6","87"],["A-JTNT12 (Low Stretch)","12","32.4","3.4","99"],["A-JTNT13 (Low Stretch)","13","48","2.8","122"]]
+    },
+    "Dynamic Rope (EN892)": {
+      info: [["Standard","EN892 (Dynamic Kernmantel)"],["Material","Nylon"],["Construction","Kernmantel"],["Applications","Climbing, fall arrest, rescue training"]],
+      cols: ["Type","Diameter (mm)","Dynamic Elongation (%)","Static Elongation (%)","Weight (g/m)"],
+      rows: [["A-DSD 9","9","38","9","66"],["A-DSD 10.5","10.5","35","7.6","74"],["A-DSD 11","11","35","6.8","76"]]
+    },
+    "Accessory Cord (EN564)": {
+      info: [["Standard","EN564"],["Material","Nylon"],["Diameter Range","4 – 8 mm"],["Uses","Rope loops, chest strap secondary, knots"]],
+      cols: ["Type","Diameter (mm)","Breaking Strength (kN)","Weight (g/m)"],
+      rows: [["A-DSF4","4","4.5","12.2"],["A-DSF6","6","10.6","24.6"],["A-DSF8","8","16.9","40.3"]]
+    },
+    "Rescue Training Scene Development": {
+      info: [["Product","Jiaolong Rescue Training Infrastructure"],["Type","Turnkey training environment"],["Capability","Rope rescue, technical rescue, swiftwater"],["Standard","PRAC / International rescue protocols"]],
+      cols: ["Component","Description"],
+      rows: [["Training Towers","Multi-height rescue simulation towers"],["Rigging Systems","EN1891/EN892 compliant rope systems"],["Throwlines","NFPA-certified, 7–9.5 mm, 22–47.5 kN"],["Coaching","PRAC-certified instructor programme"]]
+    },
+    "Fast Rope": {
+      info: [["Breaking Strength (45mm)","15.1 tons"],["Material","High-tenacity nylon / aramid"],["Applications","Helicopter rapid insertion"],["Clients","Special forces, military, SWAT"]],
+      cols: ["Diameter","Breaking Strength","Application"],
+      rows: [["35mm","~9 tons","Light insertion"],["45mm","15.1 tons","Standard ops"],["64mm","~30 tons","Heavy load operations"]]
+    },
+    "Tow Rope": {
+      info: [["Max Strength (Aramid)","65 tons"],["Applications","Armoured vehicles, tank recovery"],["Features","Heat resistant, non-rebound"],["Environment","Field operations, extreme terrain"]],
+      cols: ["Material","Max Strength","Application"],
+      rows: [["UHMWPE","~40 tons","Light recovery"],["Aramid","65 tons","Heavy armoured vehicle"],["Aramid III","80+ tons","Tank & AFV recovery"]]
+    },
+    "Soft Shackles": {
+      info: [["Material","UHMWPE"],["Max Breaking Strength","100 tons"],["Features","No metal, floats, corrosion-free"],["Applications","Off-road recovery, sailing rigging, marine"]],
+      cols: ["Property","Value"],
+      rows: [["Material","UHMWPE (Dyneema® type)"],["Max Breaking Strength","100 tons"],["Weight vs Steel","~85% lighter"],["Corrosion Resistance","Fully corrosion-free"],["Safety on Failure","No metallic recoil projectile"]]
+    },
+    "High-Strength UHMWPE Rope": {
+      info: [["Technology","Patented anti-rebound core"],["Max Breaking Strength","823 tons"],["Applications","Ship mooring, anchorage, towing"],["Features","High-elongation central core absorbs rebound energy"]],
+      cols: ["Diameter (mm)","Breaking Strength (kN)","Weight (g/m)"],
+      rows: [["20","306","232"],["28","549","445"],["36","846","720"],["44","1,180","1,060"],["56","1,830","1,690"],["72","2,850","2,780"],["96","5,000","4,970"]]
+    },
+    "Fireproof Rope": {
+      info: [["Material","Aramid (Nomex® / Kevlar® type)"],["Diameter Options","8 mm, 9.5 mm, 12.5 mm"],["Applications","Fire rescue, high-temperature environments"],["Features","Flame resistant, heat stable"]],
+      cols: ["Diameter","Application","Temperature Rating"],
+      rows: [["8 mm","Personal safety line","Up to 300°C short-term"],["9.5 mm","Structural rescue","Up to 300°C short-term"],["12.5 mm","Heavy rescue systems","Up to 300°C short-term"]]
+    },
+    "Dynamic Rope": {
+      info: [["Type","Dynamic Kernmantle Rope"],["Standard","EN892 / UIAA"],["Material","Nylon (Polyamide)"],["Application","Rock Climbing, Ice Climbing, Mountaineering"],["Construction","Kernmantle (braided core + woven sheath)"]],
+      cols: ["Property","Description"],
+      rows: [["Elasticity","Absorbs fall energy to reduce peak force on anchor"],["Certification","CE EN892, UIAA certified"],["Construction","Kernmantle — braided nylon core inside woven sheath"],["History","Nylon has replaced all natural materials since 1945"],["Contact","info@huakai-rope.com"]]
+    },
+    "Static Rope": {
+      info: [["Standard","CE EN1891 / UIAA"],["Diameters","9.6 mm, 10.5 mm, 11 mm"],["Application","Ascending, Lowering, Hauling, Work at Height"],["Elongation","Max 2% (very low stretch)"]],
+      cols: ["Property","Test Result","EN1891 Requirement"],
+      rows: [["Knotability","1.1","Max 1.2"],["Sheath Slippage","0 mm","Max 3.7 mm"],["Elongation","2%","Max 5%"],["Mass of Sheath","37%","Min 34%"],["Mass of Core","63%","Min 42%"],["Strength with Termination","20.8 kN","Min 22 kN / 3 min"],["Strength without Termination","31.0 kN","Min 22 kN / 3 min"],["Fall Arrest Peak Force","5.8 kN","Max 6.0 kN"],["Dynamic Performance","21 Falls","Min 5 Falls"]]
+    },
+    "Kinetic Recovery Rope": {
+      info: [["Material","Nylon (Polyamide)"],["Elongation",">30%"],["Application","4WD & Off-Road Vehicle Recovery"],["Advantage","Absorbs & releases energy — safer than straps, chain or wire cable"]],
+      cols: ["Diameter","Length","Breaking Strength"],
+      rows: [["1/2\" (13 mm)","20' (6.1 m)","7,400 lbs / 3,350 kg"],["3/4\" (19 mm)","20' (6.1 m)","19,000 lbs / 8,610 kg"],["7/8\" (22 mm)","30' (9.1 m)","28,600 lbs / 12,970 kg"],["1\" (25.5 mm)","30' (9.1 m)","32,000 lbs / 14,510 kg"],["1-1/4\" (32 mm)","30' (9.1 m)","46,000 lbs / 20,860 kg"],["1-1/2\" (38 mm)","30' (9.1 m)","64,000 lbs / 29,020 kg"],["2\" (51 mm)","30' (9.1 m)","125,000 lbs / 56,690 kg"],["2-1/2\" (63.5 mm)","50' (15.2 m)","176,000 lbs / 79,800 kg"]]
+    },
+    "Soft Shackle": {
+      info: [["Material","UHMWPE (Ultra-High Molecular Weight Polyethylene)"],["Tagline","The Superior, Stronger and Safer Synthetic Shackle"],["Safety","No metal projectile if broken"],["Design","No weakening splices"],["Application","Off-road recovery, sailing rigging, marine"]],
+      cols: ["Diameter (mm)","Break Strength (lbs)","Break Strength (kg)"],
+      rows: [["10 mm","32,500 lbs","14,740 kg"],["12 mm","45,500 lbs","20,640 kg"],["14 mm","55,000 lbs","24,950 kg"],["16 mm","97,000 lbs","44,000 kg"]]
+    },
+    "Winch Rope": {
+      info: [["Material","UHMWPE 12-Strand (Dyneema®)"],["Weight Saving","85% lighter than steel wire"],["Safety","Does not store energy — no recoil on failure"],["Floats","Yes — floats on water"],["Compatible Winches","2,500 to 20,000 lbs capacity"],["Applications","ATV, UTV, Jeep, Truck, Off-road, Military, Commercial"]],
+      cols: ["Diameter (mm)","Weight (g/m)","Break Strength (kg)","Break Strength (kN)"],
+      rows: [["6","23","3,600","35.0"],["8","39","5,700","55.8"],["10","59","9,200","90.0"],["12","95","13,200","129.5"],["14","128","16,500","161.9"],["16","160","20,600","202.4"],["18","208","26,300","257.5"],["20","255","31,200","305.3"],["24","358","43,500","426.8"]]
+    },
+    "Submerged Buoy Rope": {
+      info: [["Materials","Aramid, UHMWPE, Vectran fiber variants"],["Features","Low creep, aging & corrosion resistance, lightweight"],["Thimble","316L stainless steel thimble compatible"],["Applications","Deep-sea exploration, oceanographic research, buoy mooring"]],
+      cols: ["Fiber Type","Diameter (mm)","Model","Breaking Strength (kgf)"],
+      rows: [["Aramid","6","H-QBKT6","2,200"],["Aramid","8","H-QBKT8","4,400"],["Aramid","10","H-QBKT10","6,300"],["Aramid","12","H-QBKT12","9,450"],["Aramid","14","H-QBKT14","13,250"],["Aramid","16","H-QBKT16","15,800"],["UHMWPE","6","H-QBUT6","2,000"],["UHMWPE","8","H-QBUT8","3,600"],["UHMWPE","10","H-QBUT10","5,150"],["UHMWPE","12","H-QBUT12","9,050"],["UHMWPE","14","H-QBUT14","12,050"],["UHMWPE","16","H-QBUT16","17,250"],["Vectran","6","H-QBVT6","2,250"],["Vectran","8","H-QBVT8","4,500"],["Vectran","10","H-QBVT10","6,700"],["Vectran","12","H-QBVT12","11,300"],["Vectran","14","H-QBVT14","15,850"],["Vectran","16","H-QBVT16","18,850"]]
+    },
+    "Nylon Buoy Rope": {
+      info: [["Material","Nylon fiber"],["Elongation at Break","26% – 36%"],["Features","High shock absorption, effectively disperses external forces"],["Applications","Buoy mooring, scientific research, resource exploration"]],
+      cols: ["Model","Diameter (mm)","Breaking Strength (kgf)"],
+      rows: [["H-FBN16","16","4,100"],["H-FBN18","18","5,450"],["H-FBN20","20","7,000"],["H-FBN22","22","8,300"],["H-FBN24","24","9,650"],["H-FBN26","26","11,150"]]
+    },
+    "Sailboat Rope": {
+      info: [["Construction","Triple-braided, double-braided, or single-braided"],["Treatment","Heat or cold stretch available for optimal softness & low elongation"],["Features","Brightly coloured, special wear-resistant coatings"],["Applications","Mooring, sail control, rigging"]],
+      cols: ["Type","Diameter (mm)","Breaking Strength (kgf)","Model"],
+      rows: [["Triple Braid","8","2,025","H-FCUTT8"],["Triple Braid","10","3,487","H-FCUTT10"],["Triple Braid","12","5,360","H-FCUTT12"],["Double Braid","6","800","H-FCTT6"],["Double Braid","8","1,200","H-FCTT8"],["Double Braid","10","2,000","H-FCTT10"],["Double Braid","12","3,500","H-FCTT12"],["Single Braid","4","1,400","H-FCU4"],["Single Braid","6","3,000","H-FCU6"],["Single Braid","8","6,000","H-FCU8"],["Single Braid","10","8,000","H-FCU10"]]
+    },
+    "Elastic Anchor Cable": {
+      info: [["System","Elastic rope + limiting cable combined"],["Breaking Elongation","80%"],["Model","H-MSTT28"],["Applications","Floating platforms, photovoltaic mooring, vessel mooring systems"]],
+      cols: ["Component","Diameter (mm)","Length (m)","Breaking Strength (kgf)","Note"],
+      rows: [["Elastic Rope","26","2.5","1,500","Breaking elongation 80%, UV excellent"],["Limit Cable","10","3.7","5,500","316L stainless steel ring, ID 40mm"]]
+    },
+    "Polyamide Rope": {
+      info: [["Material","High-quality polyamide composite silk fiber"],["Features","Large elongation, seawater corrosion resistant, wear & aging resistant"],["Applications","Mooring and towing of surface ships, naval vessels"],["Diameter Range","4 – 100 mm"]],
+      cols: ["Diameter (mm)","Weight (g/m)","Breaking Strength (tons)"],
+      rows: [["4","11","0.5"],["10","70","2.3"],["20","273","8.9"],["30","599","19.1"],["40","1,036","31.8"],["50","1,633","47.2"],["60","2,376","70.4"],["72","3,418","92.0"],["80","4,185","112.2"],["100","6,529","171.0"]]
+    },
+    "Combat Training System": {
+      info: [["Standards","EN892 (Dynamic), EN1891 (Static), EN564 (Accessory Cord)"],["Colors","Black and camo braided ropes + metal gear"],["Features","Long service life, excellent wear resistance"],["Applications","Daily training, rescue, combat operations"]],
+      cols: ["Type","Diameter (mm)","Breaking Strength (kN)","Elongation (%)"],
+      rows: [["Static EN1891","10.5","30.3","3.4"],["Static EN1891","11","30.9","4.5"],["Static EN1891","11.5","33","2.8"],["Static EN1891","12","42","2.8"],["Dynamic EN892","9","—","38"],["Dynamic EN892","10.5","—","35"],["Dynamic EN892","11","—","35"],["Accessory EN564","3","2.0","—"],["Accessory EN564","6","10.6","—"],["Accessory EN564","8","16.9","—"]]
+    },
+    "Ship Towing Rope": {
+      info: [["Material","High-quality polyester and polypropylene fiber"],["Features","Good drainage and wear resistance, replaces nylon rope"],["Applications","Ship towing operations"],["Diameter Range","32 – 44 mm"]],
+      cols: ["Diameter (mm)","Weight (g/m)","Breaking Strength (tons)"],
+      rows: [["32","620","15"],["36","800","18"],["40","985","22"],["44","1,175","26.5"]]
+    },
+    "Synthetic Chain": {
+      info: [["Material","UHMWPE (Ultra-High Molecular Weight Polyethylene)"],["Safety Factor","4×"],["Operating Temp.","-40 °C to +70 °C"],["Applications","Industrial lifting, marine operations — replaces metal chains"]],
+      cols: ["Model","Breaking Load (kgf)","Link Width (mm)","Link Thickness (mm)","Weight (g/m)"],
+      rows: [["XWLDU1115","2,600","15","11","320"],["XWLDU1120","4,000","20","11","470"],["XWLDU1525","6,800","25","15","580"],["XWLDU1530","5,000","30","15","890"],["XWLDU1540","10,300","40","15","1,120"]]
+    },
+    "Aramid Rope": {
+      info: [["Material","Aramid fiber"],["Density","1.38 g/cm³"],["Breaking Elongation","4 – 5%"],["Applications","Defence, marine engineering, extreme temperature environments"]],
+      cols: ["Diameter (mm)","Weight (g/m)","Breaking Strength (tons)"],
+      rows: [["2","4.3","0.8"],["6","27","3.8"],["10","70","9.3"],["14","135","18"],["18","210","27"],["22","330","34"],["26","475","46"],["30","650","64"]]
+    },
+    "Vectran Rope": {
+      info: [["Material","Vectran® high-modulus fiber"],["Density","1.4 g/cm³"],["Breaking Elongation","3 – 4%"],["Features","High strength, low elongation, zero creep, heat & UV resistant"]],
+      cols: ["Diameter (mm)","Weight (g/m)","Breaking Strength (tons)"],
+      rows: [["2","4.2","0.7"],["6","26.3","3.5"],["10","69.7","8.5"],["14","133","16"],["18","206","25"],["22","325","31"],["26","460","44"],["30","605","60"]]
+    },
+    "Aramid III Rope": {
+      info: [["Material","Advanced para-aramid heterocyclic fibers (Aramid III)"],["Density","1.44 g/cm³"],["Breaking Elongation","4.5 – 5.5%"],["Applications","Aerospace, defence, cutting-edge deep-sea applications"]],
+      cols: ["Diameter (mm)","Weight (g/m)","Breaking Strength (tons)"],
+      rows: [["2","4","1"],["6","26","5.8"],["10","65","14"],["14","126","21"],["18","220","31"],["22","298","43"],["26","427","60"],["30","573","83"]]
+    },
+    "Emergency Evacuation & Lifting System": {
+      info: [["Capacity","4 – 8 personnel per operation"],["Application","Helicopter rapid extraction & emergency evacuation"],["Features","Efficient transfer of personnel, weapons and equipment"],["Standard","Military and civil emergency protocols"]],
+      cols: ["Diameter (mm)","Breaking Strength (kN)","Weight (g/m)","Application"],
+      rows: [["35","80","702","Light evacuation"],["40","100","881","Standard operations"],["45","103","900","Heavy load / weapons transfer"]]
+    },
+    "Throwline": {
+      info: [["Standard","NFPA 1983"],["Material","UHMWPE & Polypropylene"],["Features","High-quality, highly reliable water rescue rope"],["Applications","Rapids exercise, water rescue, shore rescue"]],
+      cols: ["Type","Diameter (mm)","Breaking Strength (kN)","Elongation (%)","Weight (g/m)"],
+      rows: [["ZFJS-S-7-UPP","7","22.00","3.60","27.3"],["ZFJS-S-7.5-UPP","7.5","27.10","1.30","30.8"],["ZFJS-S-8-UPP","8","34.85","3.17","38.1"],["ZFJS-S-8.5-UPP","8.5","27.50","3.60","40.9"],["ZFJS-S-9-UPP","9","37.97","3.36","44.8"],["ZFJS-S-9.5-UPP","9.5","47.50","2.00","47.0"]]
+    },
+    "Canyoning Rope": {
+      info: [["Material","Polypropylene, Polyester & UHMWPE blend"],["Features","Wear resistant, easy to knot, good hand feel, quick anchor-point setting"],["Applications","Canyoning, cave exploration, wet environments"],["Advantage","High strength-to-weight ratio in both dry and wet conditions"]],
+      cols: ["Type","Diameter (mm)","Breaking Strength (kN)","Elongation (%)","Weight (g/m)"],
+      rows: [["A-SCUPP&UT8.5","8.5","20.00","1.25","44.2"],["A-SCUPP&UA9","9","22.00","2.25","46.0"],["A-SCUPP&UT9.5","9.5","25.40","1.40","52.3"]]
+    },
+    "Lanyard": {
+      info: [["Types","Fixed and adjustable"],["Material","Nylon (Polyamide)"],["Construction","Trisilateral static braided rope core — minimises sewing strength loss"],["Breaking Strength","22 kN"]],
+      cols: ["Type","Diameter (mm)","Breaking Strength (kN)","Weight (g/m)","Work Length (cm)"],
+      rows: [["A-WSGS60","10.5","22","90","60"],["A-WSGS100","10.5","22","120","100"],["A-WSGS150","10.5","22","160","150"],["A-WSGDF30/65 (Adjustable)","10.5","22","120","30 / 65"]]
+    },
+    "Webbing": {
+      info: [["Standards","EN566, EN795B, XF494, GB30682"],["Materials","Polyester, UHMWPE, Nylon"],["Technology","Lock-edge weaving, seamless tubular connection, dual-core protection"],["Applications","Height safety, anchor, personal protection"]],
+      cols: ["Type","Model","Work Length (cm)","Width (mm)","Material"],
+      rows: [["Rope Sling","A-BDT60","60","18","Polyester"],["Rope Sling","A-BDT120","120","22","Polyester"],["Lightweight","A-BDU60","60","10","UHMWPE"],["Lightweight","A-BDU120","120","10","UHMWPE"],["High Tensile","A-25BDN100","100","25","Nylon"],["High Tensile","A-25BDN150","150","25","Nylon"],["High Tensile","A-25BDN200","200","25","Nylon"]]
+    }
+  };
+
+  // ── VIDEO HERO (no carousel needed) ────────────────────────────────────
+
+  // ── NAV TABS ─────────────────────────────────────────────────────────────
+  function switchTab(domain) {
+    document.querySelectorAll('.prod-tab').forEach(function(t) { t.classList.remove('active'); });
+    document.querySelectorAll('.prod-panel').forEach(function(p) { p.classList.remove('active'); });
+    var tab = document.getElementById('tab-' + domain);
+    var panel = document.getElementById('panel-' + domain);
+    if (tab) tab.classList.add('active');
+    if (panel) panel.classList.add('active');
+    document.querySelectorAll('.hero-sector').forEach(function(s) { s.classList.remove('active-tab'); });
+    var sectors = document.querySelectorAll('.hero-sector');
+    var idx = {marine:0,defence:1,safety:2,outdoor:3}[domain];
+    if (idx !== undefined && sectors[idx]) sectors[idx].classList.add('active-tab');
+    var el = document.getElementById('products');
+    if (el) el.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  function goTab(domain) {
+    switchTab(domain);
+  }
+
+  // ── MOBILE MENU ──────────────────────────────────────────────────────────
+  var hamburger = document.getElementById('hamburger');
+  var mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', function() { mobileNav.classList.toggle('open'); });
+  function closeMenu() { mobileNav.classList.remove('open'); }
+  // Close mobile menu when tapping outside it
+  document.addEventListener('click', function(e) {
+    if (mobileNav.classList.contains('open') && !mobileNav.contains(e.target) && !hamburger.contains(e.target)) {
+      mobileNav.classList.remove('open');
+    }
+  });
+
+  // ── REBUILD PRODUCT CARDS (dramatic reveal) ──────────────────────────────
+  function buildCard(card) {
+    var img = card.querySelector('img');
+    var imgSrc = card.dataset.img || (img ? img.getAttribute('src') : '') || '';
+    if (img) img.removeAttribute('style');
+    // gather data
+    var name    = card.dataset.name  || '';
+    var spec1   = card.dataset.spec1 || '';
+    var val1    = card.dataset.val1  || '';
+    // pull desc from 3rd inner .product-card div (index 2); icon from 1st (index 0)
+    var innerDivs = Array.from(card.querySelectorAll(':scope > .product-card'));
+    var iconText = innerDivs.length >= 1 ? innerDivs[0].textContent.trim() : '';
+    var descText = innerDivs.length >= 3 ? innerDivs[2].textContent.trim() : '';
+    // truncate desc to 2 sentences max
+    var sentences = descText.split(/(?<=[.!?])\s+/);
+    if (sentences.length > 2) descText = sentences.slice(0,2).join(' ');
+    // clear card contents
+    while (card.firstChild) card.removeChild(card.firstChild);
+    // build img wrap — real photo, or a styled placeholder when no image is set
+    var wrap = document.createElement('div');
+    wrap.className = 'pc-img-wrap';
+    if (imgSrc) {
+      var im = new Image();
+      im.src = imgSrc;
+      im.alt = name;
+      wrap.appendChild(im);
+    } else {
+      var ph = document.createElement('div');
+      ph.className = 'pc-img-placeholder';
+      ph.textContent = iconText;
+      ph.setAttribute('aria-hidden', 'true');
+      wrap.appendChild(ph);
+    }
+    card.appendChild(wrap);
+    // build reveal overlay
+    // SEC: build via DOM API + textContent instead of innerHTML to prevent XSS (CWE-79)
+    var reveal = document.createElement('div');
+    reveal.className = 'pc-reveal';
+
+    var rvBadge = document.createElement('div');
+    rvBadge.className = 'pc-reveal__badge';
+    rvBadge.textContent = 'View Product';
+    reveal.appendChild(rvBadge);
+
+    var rvName = document.createElement('div');
+    rvName.className = 'pc-reveal__name';
+    rvName.textContent = name;
+    reveal.appendChild(rvName);
+
+    if (spec1) {
+      var rvSpec = document.createElement('div');
+      rvSpec.className = 'pc-reveal__spec';
+      var rvSep = document.createElement('span');
+      rvSep.className = 'pc-reveal__spec-sep';
+      rvSpec.appendChild(rvSep);
+      rvSpec.appendChild(document.createTextNode(spec1 + ': '));
+      var rvVal = document.createElement('strong');
+      rvVal.textContent = val1;
+      rvSpec.appendChild(rvVal);
+      reveal.appendChild(rvSpec);
+    }
+
+    if (descText) {
+      var rvDesc = document.createElement('div');
+      rvDesc.className = 'pc-reveal__desc';
+      rvDesc.textContent = descText;
+      reveal.appendChild(rvDesc);
+    }
+
+    var rvCta = document.createElement('div');
+    rvCta.className = 'pc-reveal__cta';
+    rvCta.appendChild(document.createTextNode('See Full Specs '));
+    var rvArrow = document.createElement('span');
+    rvArrow.className = 'pc-reveal__cta-arrow';
+    rvArrow.textContent = '→';
+    rvCta.appendChild(rvArrow);
+    reveal.appendChild(rvCta);
+
+    card.appendChild(reveal);
+    // click opens modal (existing openModal logic)
+    card.onclick = function() { openModal(card); };
+  }
+  // Build any product cards already in the DOM (cards are injected from Sanity at runtime)
+  document.querySelectorAll('.product-card[data-img]').forEach(function(card) { buildCard(card); });
+
+  // ── STATS COUNTER ─────────────────────────────────────────────────────────
+  function animCount(el, target) {
+    var start = 0, dur = 1800, step = target / (dur / 16);
+    var t = setInterval(function() {
+      start = Math.min(start + step, target);
+      el.textContent = Math.floor(start);
+      if (start >= target) clearInterval(t);
+    }, 16);
+  }
+  var statsObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        animCount(document.getElementById('cnt-years'), 100);
+        animCount(document.getElementById('cnt-countries'), 30);
+        animCount(document.getElementById('cnt-products'), 50);
+        animCount(document.getElementById('cnt-certs'), 50);
+        statsObserver.disconnect();
+      }
+    });
+  }, {threshold: 0.3});
+  var statsRow = document.querySelector('.stats-row');
+  if (statsRow) statsObserver.observe(statsRow);
+
+  // ── FADE-IN OBSERVER ─────────────────────────────────────────────────────
+  var fadeObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, {threshold: 0.1});
+  document.querySelectorAll('.fade-in').forEach(function(el) { fadeObs.observe(el); });
+
+  // ── SCROLL SPY ────────────────────────────────────────────────────────────
+  window.addEventListener('scroll', function() {
+    var sections = ['about','products','projects','news','contact'];
+    var current = '';
+    sections.forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el && el.getBoundingClientRect().top <= 90) current = id;
+    });
+    document.querySelectorAll('.nav-link').forEach(function(l) {
+      var href = l.getAttribute('href');
+      l.classList.toggle('active', href === '#' + current);
+    });
+  });
+
+  // ── ZOOM ──────────────────────────────────────────────────────────────────
+  var _zoom = 1, _panX = 0, _panY = 0, _dragging = false, _dragStart = {x:0,y:0}, _pinchStartDist = 0, _pinchStartZoom = 1;
+  function applyZoom() {
+    var img = document.getElementById('modalImg');
+    img.style.transform = 'translate(' + _panX + 'px,' + _panY + 'px) scale(' + _zoom + ')';
+    img.style.cursor = _zoom > 1 ? 'grab' : 'default';
+    document.getElementById('zoomLevel').textContent = Math.round(_zoom * 100) + '%';
+  }
+  function resetZoom() { _zoom = 1; _panX = 0; _panY = 0; applyZoom(); }
+  document.getElementById('zoomIn').addEventListener('click', function(e) { e.stopPropagation(); _zoom = Math.min(_zoom + 0.25, 5); applyZoom(); });
+  document.getElementById('zoomOut').addEventListener('click', function(e) { e.stopPropagation(); _zoom = Math.max(_zoom - 0.25, 0.25); if (_zoom <= 1) { _panX = 0; _panY = 0; } applyZoom(); });
+  document.getElementById('zoomReset').addEventListener('click', function(e) { e.stopPropagation(); resetZoom(); });
+  var imgCont = document.getElementById('modalImgContainer');
+  imgCont.addEventListener('wheel', function(e) { e.preventDefault(); _zoom = Math.max(0.25, Math.min(5, _zoom + (e.deltaY < 0 ? 0.15 : -0.15))); if (_zoom <= 1) { _panX = 0; _panY = 0; } applyZoom(); }, {passive:false});
+  imgCont.addEventListener('mousedown', function(e) { if (_zoom > 1) { _dragging = true; _dragStart = {x: e.clientX - _panX, y: e.clientY - _panY}; e.preventDefault(); } });
+  document.addEventListener('mousemove', function(e) { if (_dragging) { _panX = e.clientX - _dragStart.x; _panY = e.clientY - _dragStart.y; applyZoom(); } });
+  document.addEventListener('mouseup', function() { _dragging = false; });
+  // Touch drag & pinch-to-zoom for modal image on mobile
+  imgCont.addEventListener('touchstart', function(e) {
+    if (e.touches.length === 1 && _zoom > 1) {
+      _dragging = true;
+      _dragStart = {x: e.touches[0].clientX - _panX, y: e.touches[0].clientY - _panY};
+    } else if (e.touches.length === 2) {
+      _pinchStartDist = Math.hypot(e.touches[1].clientX - e.touches[0].clientX, e.touches[1].clientY - e.touches[0].clientY);
+      _pinchStartZoom = _zoom;
+    }
+  }, {passive:true});
+  imgCont.addEventListener('touchmove', function(e) {
+    if (e.touches.length === 1 && _dragging) {
+      _panX = e.touches[0].clientX - _dragStart.x;
+      _panY = e.touches[0].clientY - _dragStart.y;
+      applyZoom(); e.preventDefault();
+    } else if (e.touches.length === 2 && _pinchStartDist > 0) {
+      var dist = Math.hypot(e.touches[1].clientX - e.touches[0].clientX, e.touches[1].clientY - e.touches[0].clientY);
+      _zoom = Math.max(0.25, Math.min(5, _pinchStartZoom * (dist / _pinchStartDist)));
+      if (_zoom <= 1) { _panX = 0; _panY = 0; }
+      applyZoom(); e.preventDefault();
+    }
+  }, {passive:false});
+  imgCont.addEventListener('touchend', function() { _dragging = false; });
+
+  // ── MODAL ─────────────────────────────────────────────────────────────────
+  function openModal(card) {
+    var name = card.getAttribute('data-name') || '';
+    var img  = card.getAttribute('data-img')  || '';
+    var tags = card.getAttribute('data-tags') || '';
+    var descEl = card.querySelector('.product-card__desc');
+    var dataDesc = card.getAttribute('data-desc') || '';
+    var spec = PRODUCT_SPECS[name];
+    var primaryImg = (spec && spec.images && spec.images[0]) ? spec.images[0] : img;
+    var modalImgContainer = document.getElementById('modalImgContainer');
+    if (primaryImg) {
+      document.getElementById('modalImg').src = primaryImg;
+      document.getElementById('modalImg').alt = name;
+      modalImgContainer.style.display = '';
+    } else {
+      // no photo for this product — hide the image area instead of showing a broken image
+      document.getElementById('modalImg').removeAttribute('src');
+      document.getElementById('modalImg').alt = '';
+      modalImgContainer.style.display = 'none';
+    }
+    resetZoom();
+    document.getElementById('modalName').textContent = name;
+    document.getElementById('modalDesc').textContent = dataDesc || (descEl ? descEl.textContent.trim() : '');
+    var infoGrid = document.getElementById('modalInfoGrid');
+    var specSection = document.getElementById('modalSpecSection');
+    var specTable  = document.getElementById('modalSpecTable');
+    // SEC: use DOM API instead of innerHTML to prevent XSS (CWE-79)
+    infoGrid.innerHTML = ''; specTable.innerHTML = '';
+    if (spec) {
+      spec.info.forEach(function(row) {
+        var item = document.createElement('div');
+        item.className = 'modal-info-item';
+        var lbl = document.createElement('div');
+        lbl.className = 'modal-info-label';
+        lbl.textContent = row[0];
+        var val = document.createElement('div');
+        val.className = 'modal-info-value';
+        val.textContent = row[1];
+        item.appendChild(lbl);
+        item.appendChild(val);
+        infoGrid.appendChild(item);
+      });
+      if (spec.rows && spec.rows.length) {
+        var thead = document.createElement('thead');
+        var headRow = document.createElement('tr');
+        spec.cols.forEach(function(c) {
+          var th = document.createElement('th');
+          th.textContent = c;
+          headRow.appendChild(th);
+        });
+        thead.appendChild(headRow);
+        specTable.appendChild(thead);
+        var tbody = document.createElement('tbody');
+        spec.rows.forEach(function(r) {
+          var tr = document.createElement('tr');
+          r.forEach(function(c) {
+            var td = document.createElement('td');
+            td.textContent = c;
+            tr.appendChild(td);
+          });
+          tbody.appendChild(tr);
+        });
+        specTable.appendChild(tbody);
+        specSection.style.display = '';
+      } else {
+        specSection.style.display = 'none';
+      }
+    } else {
+      var s1 = card.getAttribute('data-spec1'), v1 = card.getAttribute('data-val1');
+      if (s1 && v1) {
+        var item2 = document.createElement('div');
+        item2.className = 'modal-info-item';
+        var lbl2 = document.createElement('div');
+        lbl2.className = 'modal-info-label';
+        lbl2.textContent = s1;
+        var val2 = document.createElement('div');
+        val2.className = 'modal-info-value';
+        val2.textContent = v1;
+        item2.appendChild(lbl2);
+        item2.appendChild(val2);
+        infoGrid.appendChild(item2);
+      }
+      specSection.style.display = 'none';
+    }
+    var tagsEl = document.getElementById('modalTags');
+    tagsEl.innerHTML = '';
+    if (tags) {
+      tags.split(',').forEach(function(t) {
+        var span = document.createElement('span');
+        span.className = 'modal-tag';
+        span.textContent = t.trim();
+        tagsEl.appendChild(span);
+      });
+    }
+    document.getElementById('productModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById('productModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
+  document.getElementById('productModal').addEventListener('click', function(e) { if (e.target === this) closeModal(); });
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+
+  document.querySelectorAll('.product-card[data-name]').forEach(function(card) {
+    card.addEventListener('click', function() { openModal(card); });
+  });
+
+  // ── CONTACT FORM ──────────────────────────────────────────────────────────
+  // SEC: input validation — sanitise & validate before processing (OWASP A03)
+  var APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_URL_HERE';
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    var form = e.target;
+    var nameVal    = document.getElementById('cf-name').value.trim();
+    var companyVal = document.getElementById('cf-company').value.trim();
+    var emailVal   = document.getElementById('cf-email').value.trim();
+    var phoneVal   = document.getElementById('cf-phone').value.trim();
+    var sectorVal  = document.getElementById('cf-sector').value;
+    var msgVal     = document.getElementById('cf-msg').value.trim();
+    var EMAIL_RE   = /^[^\s@]{1,64}@[^\s@]{1,255}\.[^\s@]{2,}$/;
+
+    var msgEl = form.querySelector('.cf-status');
+    if (!msgEl) {
+      msgEl = document.createElement('p');
+      msgEl.className = 'cf-status';
+      msgEl.style.cssText = 'margin-top:12px;padding:10px 14px;border-radius:6px;font-size:14px;';
+      form.appendChild(msgEl);
+    }
+
+    if (nameVal.length < 2) {
+      document.getElementById('cf-name').focus();
+      msgEl.textContent = 'Please enter your full name.';
+      msgEl.style.background = '#fde8e8'; msgEl.style.color = '#b91c1c';
+      return;
+    }
+    if (!EMAIL_RE.test(emailVal)) {
+      document.getElementById('cf-email').focus();
+      msgEl.textContent = 'Please enter a valid email address.';
+      msgEl.style.background = '#fde8e8'; msgEl.style.color = '#b91c1c';
+      return;
+    }
+    if (msgVal.length < 10) {
+      document.getElementById('cf-msg').focus();
+      msgEl.textContent = 'Please enter a message (at least 10 characters).';
+      msgEl.style.background = '#fde8e8'; msgEl.style.color = '#b91c1c';
+      return;
+    }
+
+    var btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    msgEl.textContent = '';
+
+    var payload = {
+      name: nameVal, company: companyVal, email: emailVal,
+      phone: phoneVal, sector: sectorVal, message: msgVal
+    };
+
+    fetch(APPS_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(payload)
+    }).then(function() {
+      msgEl.textContent = 'Thank you! Our Australian team will be in touch within 1 business day.';
+      msgEl.style.background = '#d1fae5'; msgEl.style.color = '#065f46';
+      form.reset();
+    }).catch(function() {
+      msgEl.textContent = 'Sorry, something went wrong. Please email us directly at info@hailiya.com.au';
+      msgEl.style.background = '#fde8e8'; msgEl.style.color = '#b91c1c';
+    }).finally(function() {
+      btn.disabled = false;
+      btn.textContent = 'Send Enquiry →';
+    });
+  }
+
+  // ── NEWS ──────────────────────────────────────────────────────────────────
+  var _naPage = 1, _naFilter = 'All';
+  var _naAllData = [];
+  function naRender() {
+    // SEC: all DOM writes use textContent / DOM API — no innerHTML with user-controlled data (CWE-79)
+    var catColours = {"Safety": "#d35400", "Marine": "#1565c0", "Defence": "#4a235a", "Outdoor": "#1b5e20", "Company": "#c8a84b", "Industry": "#0d2137"};
+    var catImgs    = {"Safety": "images/3071e50616036b30590663c384f49b3b.png", "Marine": "images/890a7756195138154e0eb2390ab9e7a8.jpg", "Defence": "images/e1a9acdd4c034e862bf8177aa4d527f5.png", "Outdoor": "images/prod_sailing_1.jpg", "Company": "images/workshop_exterior.png", "Industry": "images/prod_uhmwpe_1.jpg"};
+    var artImgs    = {"index167": "images/news_index167.jpg", "index166": "images/news_index166.jpg", "index165": "images/3071e50616036b30590663c384f49b3b.png", "index164": "images/news_index164.jpg", "index163": "images/3071e50616036b30590663c384f49b3b.png", "index162": "images/e1a9acdd4c034e862bf8177aa4d527f5.png", "index161": "images/news_index161.jpg", "index160": "images/3071e50616036b30590663c384f49b3b.png", "index159": "images/news_index159.jpg", "index158": "images/news_index158.jpg", "index156": "images/news_index156.jpg", "index155": "images/news_index155.jpg", "index154": "images/news_index154.jpg", "index153": "images/news_index153.jpg", "index152": "images/news_index152.jpg", "index151": "images/news_index151.jpg", "index150": "images/news_index150.jpg", "index149": "images/news_index149.jpg", "index148": "images/news_index148.jpg", "index147": "images/890a7756195138154e0eb2390ab9e7a8.jpg", "index146": "images/news_index146.jpg", "index145": "images/news_index145.jpg", "index144": "images/news_index144.jpg", "index143": "images/workshop_exterior.png", "index142": "images/news_index142.jpg", "index141": "images/news_index141.jpg", "index140": "images/news_index140.jpg", "index139": "images/news_index139.jpg", "index138": "images/news_index138.jpg", "index137": "images/news_index137.jpg", "index136": "images/news_index136.jpg", "index135": "images/news_index135.jpg", "index134": "images/news_index134.jpg", "index133": "images/news_index133.jpg", "index132": "images/news_index132.jpg", "index131": "images/news_index131.jpg", "index130": "images/prod_uhmwpe_1.jpg", "index129": "images/news_index129.jpg", "index128": "images/news_index128.jpg", "index127": "images/news_index127.jpg", "index126": "images/news_index126.jpg", "index125": "images/news_index125.jpg", "index124": "images/news_index124.jpg", "index123": "images/news_index123.jpg", "index122": "images/news_index122.jpg", "index121": "images/news_index121.jpg", "index120": "images/news_index120.jpg", "index119": "images/3071e50616036b30590663c384f49b3b.png", "index118": "images/news_index118.jpg", "index117": "images/news_index117.jpg", "index116": "images/news_index116.jpg", "index115": "images/news_index115.jpg", "index114": "images/news_index114.jpg", "index113": "images/news_index113.jpg", "index112": "images/news_index112.jpg", "index111": "images/news_index111.jpg", "index110": "images/news_index110.jpg", "index109": "images/news_index109.jpg", "index108": "images/news_index108.jpg", "index107": "images/news_index107.jpg", "index106": "images/news_index106.jpg", "index105": "images/news_index105.jpg", "index104": "images/news_index104.jpg", "index103": "images/news_index103.jpg", "index102": "images/news_index102.jpg", "index101": "images/news_index101.jpg", "index100": "images/news_index100.jpg", "index99": "images/news_index99.jpg", "index98": "images/news_index98.jpg", "index97": "images/news_index97.jpg", "index96": "images/news_index96.jpg", "index95": "images/news_index95.jpg", "index94": "images/prod_uhmwpe_1.jpg", "index93": "images/news_index93.jpg", "index92": "images/news_index92.jpg", "index91": "images/news_index91.jpg", "index90": "images/news_index90.jpg", "index89": "images/news_index89.jpg", "index88": "images/news_index88.jpg", "index87": "images/prod_sailing_1.jpg", "index86": "images/news_index86.jpg", "index85": "images/news_index85.jpg", "index84": "images/news_index84.jpg", "index83": "images/news_index83.jpg", "index82": "images/news_index82.jpg", "index81": "images/prod_uhmwpe_1.jpg", "index80": "images/news_index80.jpg", "index79": "images/news_index79.jpg", "index78": "images/news_index78.jpg", "index77": "images/news_index77.jpg", "index76": "images/news_index76.jpg", "index75": "images/news_index75.jpg", "index74": "images/3071e50616036b30590663c384f49b3b.png", "index73": "images/news_index73.jpg", "index72": "images/news_index72.jpg", "index71": "images/news_index71.jpg", "index70": "images/news_index70.jpg", "index69": "images/news_index69.jpg", "index68": "images/news_index68.jpg", "index67": "images/news_index67.jpg", "index66": "images/news_index66.jpg", "index65": "images/news_index65.jpg", "index64": "images/news_index64.jpg", "index63": "images/news_index63.jpg", "index62": "images/news_index62.jpg", "index61": "images/news_index61.jpg", "index60": "images/news_index60.jpg", "index59": "images/news_index59.jpg", "index58": "images/news_index58.jpg", "index57": "images/news_index57.jpg", "index56": "images/news_index56.jpg", "index55": "images/news_index55.jpg", "index54": "images/news_index54.jpg", "index53": "images/news_index53.jpg", "index52": "images/news_index52.jpg", "index51": "images/news_index51.jpg", "index50": "images/news_index50.jpg", "index49": "images/workshop_exterior.png", "index48": "images/workshop_exterior.png"};
+    var filtered = _naFilter === 'All' ? _naAllData : _naAllData.filter(function(a) { return a[4] === _naFilter; });
+    var perPage = 9, totalPages = Math.max(1, Math.ceil(filtered.length / perPage));
+    _naPage = Math.min(_naPage, totalPages);
+    var slice = filtered.slice((_naPage-1)*perPage, _naPage*perPage);
+    var container = document.getElementById('na-container');
+    container.innerHTML = '';
+    if (!slice.length) {
+      var emptyP = document.createElement('p');
+      emptyP.style.cssText = 'padding:40px 0;color:#999;';
+      emptyP.textContent = 'No articles found.';
+      container.appendChild(emptyP);
+    } else {
+      slice.forEach(function(a) {
+        var id=a[0], title=a[1], date=a[2], excerpt=a[3], cat=a[4];
+        var img = a[5] || artImgs[id] || catImgs[cat] || '';
+        var cc = catColours[cat] || '#333';
+        var isPng = img.endsWith('.png') || img.endsWith('.svg');
+        var card = document.createElement('a');
+        card.className = 'na-card';
+        card.href = 'news-article.html?id=' + id;
+        var imgWrap = document.createElement('div');
+        imgWrap.className = 'na-img-wrap';
+        var imgEl = document.createElement('img');
+        imgEl.src = img;
+        imgEl.alt = '';
+        imgEl.style.cssText = isPng ? 'object-fit:contain;background:#f4f5f7;' : 'object-fit:cover;';
+        imgEl.loading = 'lazy';
+        imgWrap.appendChild(imgEl);
+        var content = document.createElement('div');
+        content.className = 'na-content';
+        var meta = document.createElement('div');
+        meta.className = 'na-meta';
+        var catSpan = document.createElement('span');
+        catSpan.className = 'na-cat';
+        catSpan.style.background = cc;
+        catSpan.textContent = cat;
+        var dateSpan = document.createElement('span');
+        dateSpan.className = 'na-date';
+        dateSpan.textContent = date;
+        meta.appendChild(catSpan);
+        meta.appendChild(dateSpan);
+        var titleDiv = document.createElement('div');
+        titleDiv.className = 'na-title';
+        titleDiv.textContent = title;
+        var excerptDiv = document.createElement('div');
+        excerptDiv.className = 'na-excerpt';
+        excerptDiv.textContent = excerpt || '';
+        content.appendChild(meta);
+        content.appendChild(titleDiv);
+        content.appendChild(excerptDiv);
+        card.appendChild(imgWrap);
+        card.appendChild(content);
+        container.appendChild(card);
+      });
+    }
+    // Pagination — SEC: event listeners replace inline onclick (eliminates CSP violation)
+    var pagerEl = document.querySelector('.na-pagination');
+    if (pagerEl) {
+      pagerEl.innerHTML = '';
+      var prevBtn = document.createElement('button');
+      prevBtn.className = 'na-pager';
+      prevBtn.innerHTML = '&#8592; Prev';
+      if (_naPage <= 1) prevBtn.disabled = true;
+      prevBtn.addEventListener('click', function() { naPage(-1); });
+      pagerEl.appendChild(prevBtn);
+      for (var pg = 1; pg <= totalPages; pg++) {
+        (function(pageNum) {
+          var btn = document.createElement('button');
+          btn.className = 'na-pager' + (pageNum === _naPage ? ' na-pager--active' : '');
+          btn.textContent = String(pageNum);
+          btn.addEventListener('click', function() { naGoPage(pageNum); });
+          pagerEl.appendChild(btn);
+        })(pg);
+      }
+      var nextBtn = document.createElement('button');
+      nextBtn.className = 'na-pager';
+      nextBtn.innerHTML = 'Next &#8594;';
+      if (_naPage >= totalPages) nextBtn.disabled = true;
+      nextBtn.addEventListener('click', function() { naPage(1); });
+      pagerEl.appendChild(nextBtn);
+    }
+  }
+  function naPage(dir) { _naPage = Math.max(1, _naPage + dir); naRender(); document.getElementById('news').scrollIntoView({behavior:'smooth',block:'start'}); }
+  function naGoPage(p) { _naPage = p; naRender(); document.getElementById('news').scrollIntoView({behavior:'smooth',block:'start'}); }
+  function naFilter(cat) {
+    _naFilter = cat; _naPage = 1; naRender();
+    document.querySelectorAll('.na-filter').forEach(function(b) { b.classList.toggle('na-filter--active', b.textContent === cat); });
+  }
+
+  // ── CERT LIGHTBOX ─────────────────────────────────────────────────────────
+  var certLb     = document.getElementById('certLightbox');
+  var certLbImg  = document.getElementById('certLbImg');
+  var certLbName = document.getElementById('certLbName');
+  var certLbClose= document.getElementById('certLbClose');
+
+  function openCert(src, name) {
+    certLbImg.src = src;
+    certLbImg.alt = name;
+    certLbName.textContent = name;
+    certLb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeCert() {
+    certLb.classList.remove('open');
+    certLbImg.src = '';
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.award-card--cert').forEach(function(card) {
+    card.addEventListener('click', function() {
+      openCert(card.dataset.certImg, card.dataset.certName);
+    });
+  });
+  certLbClose.addEventListener('click', closeCert);
+  certLb.addEventListener('click', function(e) { if (e.target === certLb) closeCert(); });
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && certLb.classList.contains('open')) closeCert(); });
+
+  // ── PROJECT CARD PHOTO VIEWER ─────────────────────────────────────────────
+  document.querySelectorAll('.project-card--img').forEach(function(card) {
+    card.addEventListener('click', function() {
+      openCert(card.dataset.certImg, card.dataset.certName);
+    });
+  });
+
+  // Init
+  // news is rendered by loadNewsFromSanity() once CMS data arrives
+
+  // Expose to global
+  window.switchTab = switchTab;
+  window.goTab = goTab;
+  window.closeMenu = closeMenu;
+  window.handleSubmit = handleSubmit;
+  window.naGoPage = naGoPage;
+  window.naPage = naPage;
+  window.naFilter = naFilter;
+
+  // ── Sanity CMS integration (products) ─────────────────────────────
+  var SANITY_PROJECT = '15fxxqgw';
+  var SANITY_DATASET = 'production';
+  var SANITY_API     = 'https://' + SANITY_PROJECT + '.apicdn.sanity.io/v2021-10-21/data/query/' + SANITY_DATASET;
+
+  function sanityFetch(query) {
+    return fetch(SANITY_API + '?query=' + encodeURIComponent(query))
+      .then(function(r) { return r.json(); })
+      .then(function(d) { return d.result || []; });
+  }
+
+  function buildCardFromData(p) {
+    var card = document.createElement('div');
+    card.className = 'product-card';
+    card.setAttribute('data-img',   p.imageUrl   || '');
+    card.setAttribute('data-name',  p.name       || '');
+    card.setAttribute('data-spec1', p.spec1Label || '');
+    card.setAttribute('data-val1',  p.spec1Value || '');
+    card.setAttribute('data-tags',  (p.tags || []).join(','));
+    card.setAttribute('data-desc',  p.description || '');
+    var d1 = document.createElement('div'); d1.className = 'product-card';
+    var d2 = document.createElement('div'); d2.className = 'product-card';
+    var d3 = document.createElement('div'); d3.className = 'product-card';
+    d3.textContent = p.description || '';
+    card.appendChild(d1); card.appendChild(d2); card.appendChild(d3);
+    return card;
+  }
+
+  function loadProductsFromSanity() {
+    var productQuery = '*[_type == "product"] | order(order asc) { name, category, "imageUrl": image.asset->url, spec1Label, spec1Value, description, tags }';
+    var grids = {
+      Marine:  document.getElementById('grid-marine'),
+      Defence: document.getElementById('grid-defence'),
+      Safety:  document.getElementById('grid-safety'),
+      Outdoor: document.getElementById('grid-outdoor')
+    };
+    sanityFetch(productQuery).then(function(products) {
+      products.forEach(function(p) {
+        var grid = grids[p.category];
+        if (grid) grid.appendChild(buildCardFromData(p));
+      });
+      document.querySelectorAll('.product-card[data-img]').forEach(function(card) {
+        if (card.querySelector('.pc-img-wrap')) return; // already built
+        buildCard(card);
+      });
+    }).catch(function(e) { console.error('Sanity product load failed:', e); });
+  }
+
+  function loadNewsFromSanity() {
+    var newsQuery = '*[_type == "newsArticle"] | order(date desc) { "id": articleId, title, date, category, excerpt, "thumbnailUrl": thumbnail.asset->url }';
+    sanityFetch(newsQuery).then(function(articles) {
+      _naAllData = articles.map(function(a) {
+        return [a.id || '', a.title, a.date, a.excerpt, a.category, a.thumbnailUrl || ''];
+      });
+      naRender();
+    }).catch(function(e) { console.error('Sanity news load failed:', e); });
+  }
+
+  loadProductsFromSanity();
+  loadNewsFromSanity();
+
+})();
+</script>
+</body>
+</html>
