@@ -67,4 +67,15 @@ HANDOVER.md              ← Full handover notes from outgoing developer
 - **LinkedIn:** https://www.linkedin.com/company/qingdao-hailiya-group-co-ltd/
 - **Outgoing developer:** Vedant
 
+## Sanity CMS data status (confirmed July 2026)
+
+Queried directly via the Sanity public API (`https://15fxxqgw.api.sanity.io/`):
+
+| Type | Expected | Confirmed |
+|------|----------|-----------|
+| `product` | 43 | **43 ✓** |
+| `newsArticle` | 119 | **119 ✓** |
+
+The import scripts (`import-products.js`, `import-news.js`) were run successfully against the production dataset before this handover. No re-import is needed.
+
 ## User preferences
